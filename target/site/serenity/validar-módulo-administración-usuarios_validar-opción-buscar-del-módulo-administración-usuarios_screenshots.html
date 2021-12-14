@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Automatizacion_Aquarius</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="feature_validar_módulo_administración_usuarios.html">Validar M&oacute;dulo Administraci&oacute;n Usuarios</a></span>
+                > <span class="truncate-60"><a
+                    href="validar-módulo-administración-usuarios_validar-opción-buscar-del-módulo-administración-usuarios.html">Validar opci&oacute;n Buscar del m&oacute;dulo Administraci&oacute;n Usuarios </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-12-2021 10:15</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Validar Módulo Administración Usuarios </span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="tag_administración_usuarios_buscar.html">Administraci&oacute;n Usuarios Buscar
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Validar Opci&oacute;n Buscar Del M&oacute;dulo Administraci&oacute;n Usuarios
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="8fdcf6c3afcfd0ae5924dd8d6bfc925c4744e8160bb7699782595839b2cf681a.png" title="Given un usuario que ingresa al aplicativo Aquarius" width="960"/>
+                <img src="42ad9f1368e6b1211668996bb8b24a02a67aeadd733d40d3643241b14de424cd.png" title="And se autentica con usuario y contrase&ntilde;a" width="960"/>
+                <img src="a610743e5bbcb0b05d2e9f88fa222e3f4bbaae8d7c9aa9e097ad4ac64130d708.png" title="And se autentica con usuario y contrase&ntilde;a" width="960"/>
+                <img src="aa7d87b3170d4a9946e48c486801c520d06e94df263dd88ab308c8e421770388.png" title="And se autentica con usuario y contrase&ntilde;a" width="960"/>
+                <img src="scaled_d21d19ea1419b5669c18e0a1aa42853c8a00f9d5d05e3a252dcf8c049232ba5f.png" title="When ingresa al m&oacute;dulo de administraci&oacute;n de usuarios" width="960"/>
+                <img src="3c625b3130e50d42749b0df22b46760d791eb811e9ea93345c2e87ac09a9d7ea.png" title="Then valida busqueda" width="960"/>
+                <img src="scaled_219865ef3c6eed3b8e65eb220070e39badfeb1cccab91953c670cd8310c74052.png" title="Then valida busqueda" width="960"/>
+                <img src="3ffed8f7fb14087b84505d2e317926d33fd7aa26556ae40d9fb2664c05d01ed5.png" title="Then valida busqueda" width="960"/>
+                <img src="scaled_97e353886c1e90a64b2cf5b2511716abaf3c5ea8565aa4651f916bc80346f6f8.png" title="Then valida busqueda" width="960"/>
+                <img src="scaled_31487137087922c2c6d323a1160509b7ec2b635a03bd2753778dfcdfa9d35c79.png" title="Then valida busqueda" width="960"/>
+                <img src="3ffed8f7fb14087b84505d2e317926d33fd7aa26556ae40d9fb2664c05d01ed5.png" title="Then valida busqueda" width="960"/>
+                <img src="scaled_cbb69e74b460dae1a91335845a3204722dc6440896ffe027f33b498cd6fa69f7.png" title="Then valida busqueda" width="960"/>
+                <img src="scaled_831bf386bef3973905ebd6b6c082cc0fc4c9aac92a0aa862b4fe3c69a5c80c58.png" title="Then valida busqueda" width="960"/>
+                <img src="0099c42d4cf137e4de14cce535c94f3edd217330e8cf51b69bb196eaa974844a.png" title="Then valida busqueda: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.5.1</span>
+</div>
+</body>
+</html>

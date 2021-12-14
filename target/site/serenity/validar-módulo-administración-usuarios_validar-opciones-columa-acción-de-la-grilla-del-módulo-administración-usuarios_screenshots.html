@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Automatizacion_Aquarius</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="feature_validar_módulo_administración_usuarios.html">Validar M&oacute;dulo Administraci&oacute;n Usuarios</a></span>
+                > <span class="truncate-60"><a
+                    href="validar-módulo-administración-usuarios_validar-opciones-columa-acción-de-la-grilla-del-módulo-administración-usuarios.html">Validar opciones columa Acci&oacute;n de la grilla del m&oacute;dulo Administraci&oacute;n Usuarios </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-11-2021 09:15</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Validar Módulo Administración Usuarios </span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="tag_administración_usuarios_acción_grilla.html">Administraci&oacute;n Usuarios Acci&oacute;n Grilla
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Validar Opciones Columa Acci&oacute;n De La Grilla Del M&oacute;dulo Administraci&oacute;n Usuarios
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="8fdcf6c3afcfd0ae5924dd8d6bfc925c4744e8160bb7699782595839b2cf681a.png" title="Given un usuario que ingresa al aplicativo Aquarius" width="960"/>
+                <img src="6baba495b1c2df00a22073fdb90b84894883be378c1eced79aae7efea22f9d0f.png" title="And se autentica con usuario y contrase&ntilde;a" width="960"/>
+                <img src="a610743e5bbcb0b05d2e9f88fa222e3f4bbaae8d7c9aa9e097ad4ac64130d708.png" title="And se autentica con usuario y contrase&ntilde;a" width="960"/>
+                <img src="ee5f317c923ee4832cc17eee29597f9b56d7d17b1bb9111096305d5ad1411b68.png" title="And se autentica con usuario y contrase&ntilde;a" width="960"/>
+                <img src="460b34ec2a4661aebbd6040ca73e7bb8a5007e41b113fd680a660ae50ffaff3c.png" title="When ingresa al m&oacute;dulo de administraci&oacute;n de usuarios" width="960"/>
+                <img src="c76ccf75fa337f3d9470754c0c0e6f6499111983b9ddc8e4ce364e57acf62cb2.png" title="Then valida Editar usuario" width="960"/>
+                <img src="66161e6b2f4209dc3ccaafd54785841bc433447aced82f0372d1dbee127cd907.png" title="Then valida Editar usuario" width="960"/>
+                <img src="9be536a372a874afed360ae25d11d463254ac0ef6d40c277851d4f52724dbf8b.png" title="Then valida Editar usuario" width="960"/>
+                <img src="ded9620bc2871697ddf27d98dbff78c9412ba41e3af32f61148b3631b5f3f672.png" title="Then valida Editar usuario" width="960"/>
+                <img src="d2b0e6e552cad5afc7786ad0678161d82934cc2cb6bef1c545e40947f8a25e71.png" title="Then valida Editar usuario" width="960"/>
+                <img src="8ece6465ad4b898992019557eb88d96e248bddb3ca5de22d816d5e36a976c3e0.png" title="Then valida Editar usuario" width="960"/>
+                <img src="scaled_7ae7065e677962a3f4d7ece0911e63015091118f218f61d5a729436690e6d92b.png" title="Then valida Editar usuario" width="960"/>
+                <img src="scaled_16372d50fc6932d3a52a60af65d4684030a367c9a7b81d95725426c716f811c4.png" title="Then valida Editar usuario" width="960"/>
+                <img src="scaled_ea5836e670037ff99cd7a54945cecca8eb31b951ecdbaca0f7b0dcb5be8e38e8.png" title="Then valida Editar usuario" width="960"/>
+                <img src="scaled_2379ed5249c3e70d07ed24f610fc5760c238531eac31b4fd2c2b258cf37fcba7.png" title="Then valida Editar usuario" width="960"/>
+                <img src="scaled_bcff265e63e0a8b8e97dd09ca1c343a09098921622922d0dca37fb1f8e3e519c.png" title="Then valida Editar usuario" width="960"/>
+                <img src="scaled_e9051862f6687833a221570e3099dbf0673a3a37b4fecc99b82864347c92a62a.png" title="Then valida Editar usuario" width="960"/>
+                <img src="scaled_650c3a103fd2319920096f32683f377af6b41b57533eedef203812fca287489f.png" title="And subir firma" width="960"/>
+                <img src="scaled_26a40b4c1a05bf388626e00cf68d5d117eaacf48a1069d7fb11c8aab072c3dd0.png" title="And subir firma" width="960"/>
+                <img src="scaled_be38479ceb23ed109140f2e272481f84038be5da9a3e9b68882c1a570efabbdc.png" title="And subir firma" width="960"/>
+                <img src="650c3a103fd2319920096f32683f377af6b41b57533eedef203812fca287489f.png" title="And subir firma" width="960"/>
+                <img src="26a40b4c1a05bf388626e00cf68d5d117eaacf48a1069d7fb11c8aab072c3dd0.png" title="And subir firma" width="960"/>
+                <img src="scaled_91ad3b66c0d281b81f99cb2c0b7e33972e30e6faca027da055569f954d3fa5ca.png" title="And subir firma" width="960"/>
+                <img src="scaled_47167552fc1cb84f311a56ab5e0359a83c014dec59034fdbd9b5c0d9b129906c.png" title="And subir firma" width="960"/>
+                <img src="scaled_f70800f789a731c27dc69cd9eeeef9632ed8d576b61e26b5f075ba14bbcb53c0.png" title="And subir firma" width="960"/>
+                <img src="e9051862f6687833a221570e3099dbf0673a3a37b4fecc99b82864347c92a62a.png" title="And subir firma" width="960"/>
+                <img src="650c3a103fd2319920096f32683f377af6b41b57533eedef203812fca287489f.png" title="And subir firma" width="960"/>
+                <img src="scaled_bfb64fd1a1275af1ac4dc2f10c5447f3c9dcb00e8c3b9fd64b441517ae3f318e.png" title="And subir firma: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.5.1</span>
+</div>
+</body>
+</html>

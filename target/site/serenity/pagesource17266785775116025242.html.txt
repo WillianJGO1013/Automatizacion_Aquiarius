@@ -1,0 +1,225 @@
+<html lang="en"><head>
+  <title>Login | FusionAuth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="application-name" content="FusionAuth">
+  <meta name="author" content="FusionAuth">
+  <meta name="description" content="User Management Redefined. A Single Sign-On solution for your entire enterprise.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/images/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon-precomposed" sizes="128x128" href="/images/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/apple-touch-icon-152x152.png">
+
+  <link rel="icon" type="image/png" href="/images/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/images/favicon-128.png" sizes="128x128">
+  <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/images/mstile-144x144.png">
+  <meta name="msapplication-square70x70logo" content="/images/mstile-70x70.png">
+  <meta name="msapplication-square150x150logo" content="/images/mstile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="/images/mstile-310x150.png">
+  <meta name="msapplication-square310x310logo" content="/images/mstile-310x310.png">
+
+  <link rel="stylesheet" href="/css/font-awesome-4.7.0.min.css">
+  <link rel="stylesheet" href="/css/fusionauth-style.css?version=1.15.8">
+
+    <style>
+    body {
+    background-color: #fcfcfc;
+}
+.page-body {
+    padding: 35px 0px 20px!important;
+}
+.panel {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 10px 18px -2px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    1px 10px 18px -2px rgba(50, 50, 50, 0.3);
+    box-shadow:         1px 10px 18px -2px rgba(50, 50, 50, 0.3);
+    padding: 30px 30px 15px;
+}
+.panel h2, .panel h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input[type=email], input[type=file], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], textarea {
+    background-color: #f0f0f0;
+}
+.input-addon-group>input:last-child, .input-addon-group>span:last-child {
+    border-right: none;
+}
+.input-addon-group>:last-child:not(.flat), .input-addon-group>input:last-child:not(.flat) {
+    border-radius: 0 5px 5px 0;
+    font-size: 11px;
+}
+.form-row .button {
+    display: block;
+    font-size: 12px;
+    padding: 12px 13px;
+    width: 60%;
+    text-transform: uppercase;
+    margin: 0 auto 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #001ae0!important;
+}
+.input-addon-group>:first-child, .input-addon-group>input:first-child {
+    border-radius: 5px 0 0 5px;
+}
+.form-row .button:hover {
+    background: #1b2cad!important;
+}
+.form-row {
+    text-align: center;
+}
+.form-row a {
+    margin-top: 20px;
+}
+.input-addon-group span i.fa {
+    color: #4D0861;
+}
+.alert {
+    -webkit-box-shadow: 1px 6px 12px -2px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    1px 6px 12px -2px rgba(50, 50, 50, 0.3);
+    box-shadow:         1px 6px 12px -2px rgba(50, 50, 50, 0.3);
+}
+.progress-bar div {
+    background: #001ae0;
+}
+    </style>
+
+  <script src="/js/prime-min-1.4.1.js?version=1.15.8"></script>
+  <script src="/js/oauth2/LocaleSelect.js?version=1.15.8"></script>
+  <script>
+    "use strict";
+    Prime.Document.onReady(function() {
+      Prime.Document.query('.alert').each(function(e) {
+        var dismissButton = e.queryFirst('a.dismiss-button');
+        if (dismissButton !== null) {
+          new Prime.Widgets.Dismissable(e, dismissButton).initialize();
+        }
+      });
+      Prime.Document.query('[data-tooltip]').each(function(e) {
+        new Prime.Widgets.Tooltip(e).withClassName('tooltip').initialize();
+      });
+      Prime.Document.query('.date-picker').each(function(e) {
+        new Prime.Widgets.DateTimePicker(e).withDateOnly().initialize();
+      });
+      new FusionAuth.OAuth2.LocaleSelect(new Prime.Document.queryById('locale-select'));
+    });
+    FusionAuth.Version = "1.15.8";
+  </script>
+
+    <script src="/js/jstz-min-1.0.6.js"></script>
+    <script src="/js/oauth2/Authorize.js?version=1.15.8"></script>
+    <script>
+      Prime.Document.onReady(function() {
+        new FusionAuth.OAuth2.Authorize();
+        var panel = Prime.Document.queryFirst('.panel');
+        if (panel !== null) {
+          FusionAuth = FusionAuth || {};
+          FusionAuth.IdentityProvider = FusionAuth.IdentityProvider || {};
+          FusionAuth.IdentityProvider.InProgress = new Prime.Widgets.InProgress(panel);
+        }
+      });
+    </script>
+
+</head>
+<body class="app-sidebar-closed">
+<main>
+
+  <header class="app-header" style="display:none">
+    <div class="right-menu">
+      <nav>
+        <ul>
+          <li class="help"><a target="_blank" href="https://fusionauth.io/docs"><i class="fa fa-question-circle-o"></i> Help</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+<main class="page-body container">
+  <div class="row center-xs">
+    <div class="col-xs col-sm-8 col-md-6 col-lg-5 col-xl-4">
+      <div class="panel">
+          <h2>Iniciar sesión</h2>
+        <main>
+      <form action="authorize" method="POST" class="full">
+  <input type="hidden" name="client_id" value="401e7c30-a33f-42e6-a451-7d424370b975">
+  <input type="hidden" name="code_challenge" value="">
+  <input type="hidden" name="code_challenge_method" value="">
+  <input type="hidden" name="metaData.device.name" value="">
+  <input type="hidden" name="metaData.device.type" value="UNKNOWN">
+  <input type="hidden" name="nonce" value="">
+  <input type="hidden" name="redirect_uri" value="http://172.27.244.18/oauth">
+  <input type="hidden" name="response_mode" value="">
+  <input type="hidden" name="response_type" value="code">
+  <input type="hidden" name="scope" value="">
+  <input type="hidden" name="state" value="">
+  <input type="hidden" name="tenantId" value="dc94d432-02b8-d5f2-136e-dac4385ff1a2">
+  <input type="hidden" name="timezone" value="">
+  <input type="hidden" name="user_code" value="">
+  <input type="hidden" name="showPasswordField" value="true">
+
+        <fieldset>
+<div class="form-row">
+    <div class="input-addon-group">
+      <span class="icon"><i class="fa fa-user"></i></span>
+  <input type="text" name="loginId" value="" class="" autocapitalize="none" autocomplete="on" autocorrect="off" spellcheck="false" autofocus="autofocus" placeholder="Correo electrónico">
+    </div>
+</div>
+<div class="form-row">
+    <div class="input-addon-group">
+      <span class="icon"><i class="fa fa-lock"></i></span>
+  <input type="password" name="password" class="" autocapitalize="none" autocomplete="current-password" autocorrect="off" spellcheck="false" placeholder="Clave">
+    </div>
+</div>
+        </fieldset>
+
+        <div class="form-row">
+<button class="blue button"><i class="fa fa-key"></i> Enviar</button>
+            <a href="/password/forgot?tenantId=dc94d432-02b8-d5f2-136e-dac4385ff1a2&amp;client_id=401e7c30-a33f-42e6-a451-7d424370b975&amp;nonce=&amp;redirect_uri=http%3A%2F%2F172.27.244.18%2Foauth&amp;response_mode=&amp;response_type=code&amp;scope=&amp;state=&amp;timezone=&amp;metaData.device.name=&amp;metaData.device.type=UNKNOWN&amp;code_challenge=&amp;code_challenge_method=&amp;user_code=">
+¿Olvidó su clave?</a>
+
+        </div>
+      </form>
+      <div>
+      </div>
+        <div class="form-row push-top">
+          Don't have an account?
+          <a href="register?tenantId=dc94d432-02b8-d5f2-136e-dac4385ff1a2&amp;client_id=401e7c30-a33f-42e6-a451-7d424370b975&amp;nonce=&amp;redirect_uri=http%3A%2F%2F172.27.244.18%2Foauth&amp;response_mode=&amp;response_type=code&amp;scope=&amp;state=&amp;timezone=&amp;metaData.device.name=&amp;metaData.device.type=UNKNOWN&amp;code_challenge=&amp;code_challenge_method=&amp;user_code=">
+Create an account</a>
+
+        </div>
+        </main>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+  <div style="display: none; position: fixed; bottom: 5px; right: 0; padding-bottom: 5px; padding-right: 10px;">
+    <span style="padding-right: 2px;">Powered by FusionAuth</span>
+    <img src="/images/favicon-128.png" alt="FusionAuth" width="24" height="24" style="margin-bottom: -7px;">
+  </div>
+
+</main>
+
+
+<div id="prime-overlay" style="display: none;"></div></body></html>

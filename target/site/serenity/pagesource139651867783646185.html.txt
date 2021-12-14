@@ -1,0 +1,754 @@
+<html lang="en"><head><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="76x76" href="/apple-icon.png"><link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet"><link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&amp;display=swap" rel="stylesheet"><title>Radicación</title><script async="" src="https://embed.tawk.to/602122f6c31c9117cb76ee52/1eu0o0j2k" charset="UTF-8" crossorigin="*"></script><script type="text/javascript">var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date;!function(){var e=document.createElement("script"),t=document.getElementsByTagName("script")[0];e.async=!0,e.src="https://embed.tawk.to/602122f6c31c9117cb76ee52/1eu0o0j2k",e.charset="UTF-8",e.setAttribute("crossorigin","*"),t.parentNode.insertBefore(e,t)}()</script><link href="/static/css/79.a9de75ef.chunk.css" rel="stylesheet"><link href="/static/css/main.557db194.chunk.css" rel="stylesheet"><script charset="utf-8" src="/static/js/56.968073ff.chunk.js"></script><script charset="utf-8" src="/static/js/16.7f16d476.chunk.js"></script><script charset="utf-8" src="/static/js/19.b86b7ba2.chunk.js"></script><script charset="utf-8" src="/static/js/54.07871109.chunk.js"></script><script charset="utf-8" src="/static/js/46.c1a6d9e8.chunk.js"></script><script charset="utf-8" src="/static/js/18.5909bfc6.chunk.js"></script><script charset="utf-8" src="/static/js/53.4d790ebc.chunk.js"></script><script charset="utf-8" src="/static/js/14.f4b5be1b.chunk.js"></script><script charset="utf-8" src="/static/js/15.654dcf45.chunk.js"></script><script charset="utf-8" src="/static/js/29.f0306dda.chunk.js"></script><script charset="utf-8" src="/static/js/31.1e9b5f96.chunk.js"></script><script charset="utf-8" src="/static/js/32.efd3a75a.chunk.js"></script><script charset="utf-8" src="/static/js/20.7956ee31.chunk.js"></script><script charset="utf-8" src="/static/js/2.224325e8.chunk.js"></script><script charset="utf-8" src="/static/js/0.43de92ac.chunk.js"></script><script charset="utf-8" src="/static/js/6.b9432275.chunk.js"></script><script charset="utf-8" src="/static/js/9.4289a5ae.chunk.js"></script><script charset="utf-8" src="/static/js/12.6aaaa4a1.chunk.js"></script><script charset="utf-8" src="/static/js/7.498f95da.chunk.js"></script><script charset="utf-8" src="/static/js/10.5bdd306b.chunk.js"></script><script charset="utf-8" src="/static/js/13.044597a3.chunk.js"></script><script charset="utf-8" src="/static/js/66.cb87f051.chunk.js"></script><script charset="utf-8" src="/static/js/73.76d5d5cf.chunk.js"></script><script charset="utf-8" src="/static/js/27.2d21f7cd.chunk.js"></script><script charset="utf-8" src="/static/js/60.0aa6df8f.chunk.js"></script><script charset="utf-8" src="/static/js/38.fd26dba9.chunk.js"></script><script charset="utf-8" src="/static/js/36.8c98e91e.chunk.js"></script><script charset="utf-8" src="/static/js/5.07bb5933.chunk.js"></script><script charset="utf-8" src="/static/js/61.7b43aa3d.chunk.js"></script><script charset="utf-8" src="/static/js/64.56414762.chunk.js"></script><script charset="utf-8" src="/static/js/63.da445636.chunk.js"></script><script charset="utf-8" src="/static/js/40.282bdbc8.chunk.js"></script><script charset="utf-8" src="/static/js/26.c8b2f541.chunk.js"></script><script charset="utf-8" src="/static/js/30.7562d29b.chunk.js"></script><script charset="utf-8" src="/static/js/43.aa712cb0.chunk.js"></script><script charset="utf-8" src="/static/js/62.d6e65cf1.chunk.js"></script><script charset="utf-8" src="/static/js/44.7894c995.chunk.js"></script><script charset="utf-8" src="/static/js/52.fd9a1244.chunk.js"></script><script charset="utf-8" src="/static/js/21.33f81c76.chunk.js"></script><script charset="utf-8" src="/static/js/24.f1eb36c9.chunk.js"></script><script charset="utf-8" src="/static/js/25.d797d87c.chunk.js"></script><script charset="utf-8" src="/static/js/65.4cdd894c.chunk.js"></script><script charset="utf-8" src="/static/js/45.3bd54dc2.chunk.js"></script><script charset="utf-8" src="/static/js/41.82f9dc21.chunk.js"></script><style type="text/css">.TransformComponent-module_container__3NwNd {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  margin: 0;
+  padding: 0;
+}
+.TransformComponent-module_content__TZU5O {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  transform-origin: 0% 0%;
+}
+.TransformComponent-module_content__TZU5O img {
+  pointer-events: none;
+}
+</style><style type="text/css">.react-flow{width:100%;height:100%;position:relative;overflow:hidden}.react-flow__pane,.react-flow__renderer,.react-flow__selectionpane{width:100%;height:100%;position:absolute;top:0;left:0}.react-flow__pane{z-index:1}.react-flow__renderer{z-index:4}.react-flow__selectionpane{z-index:5}.react-flow__selection{position:absolute;top:0;left:0;background:rgba(0,89,220,.08);border:1px dotted rgba(0,89,220,.8)}.react-flow__edges{position:absolute;top:0;left:0;pointer-events:none;z-index:2}.react-flow__edge{pointer-events:all}.react-flow__edge.inactive{pointer-events:none}.react-flow__edge.selected .react-flow__edge-path{stroke:#555}.react-flow__edge.animated path{stroke-dasharray:5;-webkit-animation:dashdraw .5s linear infinite;animation:dashdraw .5s linear infinite}@-webkit-keyframes dashdraw{0%{stroke-dashoffset:10}}@keyframes dashdraw{0%{stroke-dashoffset:10}}.react-flow__edge-path{fill:none;stroke:#b1b1b7;stroke-width:1}.react-flow__edge-text{font-size:10px;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.react-flow__edge-textbg{fill:#fff}.react-flow__connection{pointer-events:none}.react-flow__connection .animated{stroke-dasharray:5;-webkit-animation:dashdraw .5s linear infinite;animation:dashdraw .5s linear infinite}.react-flow__connection-path{fill:none;stroke:#b1b1b7;stroke-width:1}.react-flow__nodes{width:100%;height:100%;pointer-events:none;z-index:3}.react-flow__node,.react-flow__nodes{position:absolute;transform-origin:0 0}.react-flow__node{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:all;cursor:-webkit-grab;cursor:grab}.react-flow__node-default,.react-flow__node-input,.react-flow__node-output{padding:10px;border-radius:3px;width:150px;font-size:12px;color:#222;text-align:center;border-width:1px;border-style:solid}.react-flow__node-default.selectable:hover,.react-flow__node-input.selectable:hover,.react-flow__node-output.selectable:hover{box-shadow:0 1px 4px 1px rgba(0,0,0,.08)}.react-flow__node-input{background:#fff;border-color:#0041d0}.react-flow__node-input.selected,.react-flow__node-input.selected:hover{box-shadow:0 0 0 .5px #0041d0}.react-flow__node-input .react-flow__handle{background:#0041d0}.react-flow__node-default{background:#fff;border-color:#1a192b}.react-flow__node-default.selected,.react-flow__node-default.selected:hover{box-shadow:0 0 0 .5px #1a192b}.react-flow__node-default .react-flow__handle{background:#1a192b}.react-flow__node-output{background:#fff;border-color:#ff0072}.react-flow__node-output.selected,.react-flow__node-output.selected:hover{box-shadow:0 0 0 .5px #ff0072}.react-flow__node-output .react-flow__handle{background:#ff0072}.react-flow__nodesselection{z-index:3;position:absolute;width:100%;height:100%;top:0;left:0;transform-origin:left top;pointer-events:none}.react-flow__nodesselection-rect{position:absolute;background:rgba(0,89,220,.08);border:1px dotted rgba(0,89,220,.8);pointer-events:all}.react-flow__handle{position:absolute;width:6px;height:6px;background:#555;border:1px solid #fff;pointer-events:none;border-radius:100%}.react-flow__handle.connectable{pointer-events:all;cursor:crosshair}.react-flow__handle-bottom{top:auto;left:50%;bottom:-4px;transform:translate(-50%)}.react-flow__handle-top{left:50%;top:-4px;transform:translate(-50%)}.react-flow__handle-left{top:50%;left:-4px;transform:translateY(-50%)}.react-flow__handle-right{right:-4px;top:50%;transform:translateY(-50%)}</style><style type="text/css">.react-flow__minimap{position:absolute;z-index:5;bottom:10px;right:10px;background-color:#fff}</style><style type="text/css">.react-flow__controls{position:absolute;z-index:5;bottom:10px;left:10px;box-shadow:0 0 2px 1px rgba(0,0,0,.08)}.react-flow__controls-button{background:#fefefe;border-bottom:1px solid #eee;display:flex;justify-content:center;align-items:center;width:16px;height:16px;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;padding:5px}.react-flow__controls-button svg{width:100%}.react-flow__controls-button:hover{background:#f4f4f4}</style><style type="text/css">.react-flow__background{position:absolute;top:0;left:0;width:100%;height:100%}</style><style data-react-tooltip="true">.__react_component_tooltip {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 13px;
+  left: -999em;
+  opacity: 0;
+  padding: 8px 21px;
+  position: fixed;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+  top: -999em;
+  visibility: hidden;
+  z-index: 999;
+}
+.__react_component_tooltip.allow_hover, .__react_component_tooltip.allow_click {
+  pointer-events: auto;
+}
+.__react_component_tooltip::before, .__react_component_tooltip::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.__react_component_tooltip.show {
+  opacity: 0.9;
+  margin-top: 0;
+  margin-left: 0;
+  visibility: visible;
+}
+.__react_component_tooltip.place-top::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-bottom::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-left::before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  right: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip.place-right::before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  left: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip .multi-line {
+  display: block;
+  padding: 2px 0;
+  text-align: center;
+}</style></head><body class="perfect-scrollbar-on modal-open"><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="wrapper"><div id="sidebar" class="sidebar menu_lateral" data-color="black" data-active-color="info"><div class="logo"><a href="/admin/home" class="simple-text logo-normal">&nbsp;</a></div><div class="sidebar-wrapper ps"><ul class="nav"><li class=""><a class="nav-link espacio_icono" data-tip="Radicar documentos" data-for="TooltipExample0" href="/admin/setparameters" currentitem="false"><i class="nc-icon nc-paper"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip tfe81f295-26da-4df8-9694-905b292b16cb place-right type-dark" id="TooltipExample0" data-id="tooltip"><style aria-hidden="true">
+  	.tfe81f295-26da-4df8-9694-905b292b16cb {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tfe81f295-26da-4df8-9694-905b292b16cb.place-top {
+        margin-top: -10px;
+    }
+    .tfe81f295-26da-4df8-9694-905b292b16cb.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tfe81f295-26da-4df8-9694-905b292b16cb.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tfe81f295-26da-4df8-9694-905b292b16cb.place-bottom {
+        margin-top: 10px;
+    }
+    .tfe81f295-26da-4df8-9694-905b292b16cb.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tfe81f295-26da-4df8-9694-905b292b16cb.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tfe81f295-26da-4df8-9694-905b292b16cb.place-left {
+        margin-left: -10px;
+    }
+    .tfe81f295-26da-4df8-9694-905b292b16cb.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tfe81f295-26da-4df8-9694-905b292b16cb.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tfe81f295-26da-4df8-9694-905b292b16cb.place-right {
+        margin-left: 10px;
+    }
+    .tfe81f295-26da-4df8-9694-905b292b16cb.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tfe81f295-26da-4df8-9694-905b292b16cb.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""><a class="nav-link espacio_icono" data-tip="documentos radicados" data-for="TooltipExample7" href="/admin/show-filing" currentitem="false"><i class="nc-icon nc-tile-56"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip te9c96ca7-355c-454c-bb5a-fcf6e8c17161 place-right type-dark" id="TooltipExample7" data-id="tooltip"><style aria-hidden="true">
+  	.te9c96ca7-355c-454c-bb5a-fcf6e8c17161 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.te9c96ca7-355c-454c-bb5a-fcf6e8c17161.place-top {
+        margin-top: -10px;
+    }
+    .te9c96ca7-355c-454c-bb5a-fcf6e8c17161.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .te9c96ca7-355c-454c-bb5a-fcf6e8c17161.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .te9c96ca7-355c-454c-bb5a-fcf6e8c17161.place-bottom {
+        margin-top: 10px;
+    }
+    .te9c96ca7-355c-454c-bb5a-fcf6e8c17161.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .te9c96ca7-355c-454c-bb5a-fcf6e8c17161.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .te9c96ca7-355c-454c-bb5a-fcf6e8c17161.place-left {
+        margin-left: -10px;
+    }
+    .te9c96ca7-355c-454c-bb5a-fcf6e8c17161.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .te9c96ca7-355c-454c-bb5a-fcf6e8c17161.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .te9c96ca7-355c-454c-bb5a-fcf6e8c17161.place-right {
+        margin-left: 10px;
+    }
+    .te9c96ca7-355c-454c-bb5a-fcf6e8c17161.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .te9c96ca7-355c-454c-bb5a-fcf6e8c17161.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""><a class="nav-link espacio_icono" data-tip="ver radicados masivos" data-for="TooltipExample12" href="/admin/ver-masivo" currentitem="false"><i class="nc-icon nc-box-2"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip t4ef0ed07-e517-4a5d-82d3-0a3a2901c2be place-right type-dark" id="TooltipExample12" data-id="tooltip"><style aria-hidden="true">
+  	.t4ef0ed07-e517-4a5d-82d3-0a3a2901c2be {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t4ef0ed07-e517-4a5d-82d3-0a3a2901c2be.place-top {
+        margin-top: -10px;
+    }
+    .t4ef0ed07-e517-4a5d-82d3-0a3a2901c2be.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t4ef0ed07-e517-4a5d-82d3-0a3a2901c2be.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t4ef0ed07-e517-4a5d-82d3-0a3a2901c2be.place-bottom {
+        margin-top: 10px;
+    }
+    .t4ef0ed07-e517-4a5d-82d3-0a3a2901c2be.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t4ef0ed07-e517-4a5d-82d3-0a3a2901c2be.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t4ef0ed07-e517-4a5d-82d3-0a3a2901c2be.place-left {
+        margin-left: -10px;
+    }
+    .t4ef0ed07-e517-4a5d-82d3-0a3a2901c2be.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t4ef0ed07-e517-4a5d-82d3-0a3a2901c2be.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t4ef0ed07-e517-4a5d-82d3-0a3a2901c2be.place-right {
+        margin-left: 10px;
+    }
+    .t4ef0ed07-e517-4a5d-82d3-0a3a2901c2be.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t4ef0ed07-e517-4a5d-82d3-0a3a2901c2be.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""><a class="nav-link espacio_icono" data-tip="Gestión de radicados" data-for="TooltipExample17" href="/admin/wrapper-gest-radicados" currentitem="false"><i class="nc-icon nc-book-bookmark"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip t565e25a9-6562-43dd-ba91-be03133b0c9b place-right type-dark" id="TooltipExample17" data-id="tooltip"><style aria-hidden="true">
+  	.t565e25a9-6562-43dd-ba91-be03133b0c9b {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t565e25a9-6562-43dd-ba91-be03133b0c9b.place-top {
+        margin-top: -10px;
+    }
+    .t565e25a9-6562-43dd-ba91-be03133b0c9b.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t565e25a9-6562-43dd-ba91-be03133b0c9b.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t565e25a9-6562-43dd-ba91-be03133b0c9b.place-bottom {
+        margin-top: 10px;
+    }
+    .t565e25a9-6562-43dd-ba91-be03133b0c9b.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t565e25a9-6562-43dd-ba91-be03133b0c9b.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t565e25a9-6562-43dd-ba91-be03133b0c9b.place-left {
+        margin-left: -10px;
+    }
+    .t565e25a9-6562-43dd-ba91-be03133b0c9b.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t565e25a9-6562-43dd-ba91-be03133b0c9b.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t565e25a9-6562-43dd-ba91-be03133b0c9b.place-right {
+        margin-left: 10px;
+    }
+    .t565e25a9-6562-43dd-ba91-be03133b0c9b.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t565e25a9-6562-43dd-ba91-be03133b0c9b.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li><li class=""><a class="nav-link espacio_icono" data-tip="Administración clientes" data-for="TooltipExample18" href="/admin/list-clients" currentitem="false"><i class="nc-icon nc-single-02"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip t8076336c-3eb0-41db-8a5c-8329f145082f place-right type-dark" id="TooltipExample18" data-id="tooltip"><style aria-hidden="true">
+  	.t8076336c-3eb0-41db-8a5c-8329f145082f {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t8076336c-3eb0-41db-8a5c-8329f145082f.place-top {
+        margin-top: -10px;
+    }
+    .t8076336c-3eb0-41db-8a5c-8329f145082f.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t8076336c-3eb0-41db-8a5c-8329f145082f.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t8076336c-3eb0-41db-8a5c-8329f145082f.place-bottom {
+        margin-top: 10px;
+    }
+    .t8076336c-3eb0-41db-8a5c-8329f145082f.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t8076336c-3eb0-41db-8a5c-8329f145082f.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t8076336c-3eb0-41db-8a5c-8329f145082f.place-left {
+        margin-left: -10px;
+    }
+    .t8076336c-3eb0-41db-8a5c-8329f145082f.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t8076336c-3eb0-41db-8a5c-8329f145082f.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t8076336c-3eb0-41db-8a5c-8329f145082f.place-right {
+        margin-left: 10px;
+    }
+    .t8076336c-3eb0-41db-8a5c-8329f145082f.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t8076336c-3eb0-41db-8a5c-8329f145082f.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""><a class="nav-link espacio_icono" data-tip="Administrar Sucursales" data-for="TooltipExample31" href="/admin/list-branch-offices" currentitem="false"><i class="nc-icon nc-tap-01"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip t60aa267c-7e3f-4663-96a1-bac111750184 place-right type-dark" id="TooltipExample31" data-id="tooltip"><style aria-hidden="true">
+  	.t60aa267c-7e3f-4663-96a1-bac111750184 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t60aa267c-7e3f-4663-96a1-bac111750184.place-top {
+        margin-top: -10px;
+    }
+    .t60aa267c-7e3f-4663-96a1-bac111750184.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t60aa267c-7e3f-4663-96a1-bac111750184.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t60aa267c-7e3f-4663-96a1-bac111750184.place-bottom {
+        margin-top: 10px;
+    }
+    .t60aa267c-7e3f-4663-96a1-bac111750184.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t60aa267c-7e3f-4663-96a1-bac111750184.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t60aa267c-7e3f-4663-96a1-bac111750184.place-left {
+        margin-left: -10px;
+    }
+    .t60aa267c-7e3f-4663-96a1-bac111750184.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t60aa267c-7e3f-4663-96a1-bac111750184.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t60aa267c-7e3f-4663-96a1-bac111750184.place-right {
+        margin-left: 10px;
+    }
+    .t60aa267c-7e3f-4663-96a1-bac111750184.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t60aa267c-7e3f-4663-96a1-bac111750184.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li><li class="active"><a class="nav-link espacio_icono active" data-tip="Administración usuarios" data-for="TooltipExample32" href="/admin/users" currentitem="false" aria-current="page"><i class="nc-icon nc-circle-10"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip tfd80a3f1-0aae-4636-bc72-732a083b40c4 place-right type-dark" id="TooltipExample32" data-id="tooltip" style="left: 65px; top: 422px;"><style aria-hidden="true">
+  	.tfd80a3f1-0aae-4636-bc72-732a083b40c4 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tfd80a3f1-0aae-4636-bc72-732a083b40c4.place-top {
+        margin-top: -10px;
+    }
+    .tfd80a3f1-0aae-4636-bc72-732a083b40c4.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tfd80a3f1-0aae-4636-bc72-732a083b40c4.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tfd80a3f1-0aae-4636-bc72-732a083b40c4.place-bottom {
+        margin-top: 10px;
+    }
+    .tfd80a3f1-0aae-4636-bc72-732a083b40c4.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tfd80a3f1-0aae-4636-bc72-732a083b40c4.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tfd80a3f1-0aae-4636-bc72-732a083b40c4.place-left {
+        margin-left: -10px;
+    }
+    .tfd80a3f1-0aae-4636-bc72-732a083b40c4.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tfd80a3f1-0aae-4636-bc72-732a083b40c4.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tfd80a3f1-0aae-4636-bc72-732a083b40c4.place-right {
+        margin-left: 10px;
+    }
+    .tfd80a3f1-0aae-4636-bc72-732a083b40c4.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tfd80a3f1-0aae-4636-bc72-732a083b40c4.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style>Administración usuarios</div></a></li><li class=""></li><li class=""></li><li class=""></li><li class=""><a class="nav-link espacio_icono" data-tip="Administración roles" data-for="TooltipExample36" href="/admin/roles" currentitem="false"><i class="nc-icon nc-touch-id"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip t029503cb-3673-4e58-ba0a-36e470894aa0 place-right type-dark" id="TooltipExample36" data-id="tooltip"><style aria-hidden="true">
+  	.t029503cb-3673-4e58-ba0a-36e470894aa0 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t029503cb-3673-4e58-ba0a-36e470894aa0.place-top {
+        margin-top: -10px;
+    }
+    .t029503cb-3673-4e58-ba0a-36e470894aa0.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t029503cb-3673-4e58-ba0a-36e470894aa0.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t029503cb-3673-4e58-ba0a-36e470894aa0.place-bottom {
+        margin-top: 10px;
+    }
+    .t029503cb-3673-4e58-ba0a-36e470894aa0.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t029503cb-3673-4e58-ba0a-36e470894aa0.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t029503cb-3673-4e58-ba0a-36e470894aa0.place-left {
+        margin-left: -10px;
+    }
+    .t029503cb-3673-4e58-ba0a-36e470894aa0.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t029503cb-3673-4e58-ba0a-36e470894aa0.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t029503cb-3673-4e58-ba0a-36e470894aa0.place-right {
+        margin-left: 10px;
+    }
+    .t029503cb-3673-4e58-ba0a-36e470894aa0.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t029503cb-3673-4e58-ba0a-36e470894aa0.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li><li class=""></li><li class=""><a class="nav-link espacio_icono" data-tip="Procesar documentos" data-for="TooltipExample38" href="/admin/ProcessDocuments" currentitem="false"><i class="nc-icon nc-single-copy-04"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip tedebf577-7f8b-4a30-ae60-7a80e0650e34 place-right type-dark" id="TooltipExample38" data-id="tooltip"><style aria-hidden="true">
+  	.tedebf577-7f8b-4a30-ae60-7a80e0650e34 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tedebf577-7f8b-4a30-ae60-7a80e0650e34.place-top {
+        margin-top: -10px;
+    }
+    .tedebf577-7f8b-4a30-ae60-7a80e0650e34.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tedebf577-7f8b-4a30-ae60-7a80e0650e34.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tedebf577-7f8b-4a30-ae60-7a80e0650e34.place-bottom {
+        margin-top: 10px;
+    }
+    .tedebf577-7f8b-4a30-ae60-7a80e0650e34.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tedebf577-7f8b-4a30-ae60-7a80e0650e34.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tedebf577-7f8b-4a30-ae60-7a80e0650e34.place-left {
+        margin-left: -10px;
+    }
+    .tedebf577-7f8b-4a30-ae60-7a80e0650e34.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tedebf577-7f8b-4a30-ae60-7a80e0650e34.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tedebf577-7f8b-4a30-ae60-7a80e0650e34.place-right {
+        margin-left: 10px;
+    }
+    .tedebf577-7f8b-4a30-ae60-7a80e0650e34.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tedebf577-7f8b-4a30-ae60-7a80e0650e34.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li></ul><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div></div><div class="main-panel ps ps--active-y"><nav class="navbar-absolute fixed-top navbar-transparent  navbar navbar-expand-lg bg-transparent"><div class="container-fluid"><div class="navbar-wrapper"><div class="navbar-toggle"><button type="button" class="navbar-toggler"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button></div><a class="navbar-brand">Administración usuarios</a></div><button type="button" class="navbar-toggler"><span class="navbar-toggler-bar navbar-kebab"></span><span class="navbar-toggler-bar navbar-kebab"></span><span class="navbar-toggler-bar navbar-kebab"></span></button><div class="justify-content-end collapse navbar-collapse"><form class="mr-4"><span class="user"> Usuario: Coordinador 01</span></form><ul class="navbar-nav"><li class="dropdown nav-item"><a aria-haspopup="true" href="#" class="dropdown-toggle nav-link" aria-expanded="false"><i class="nc-icon nc-circle-10"></i><p><span class="d-lg-none d-md-block">Menú Opciones</span></p></a><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right"><h6 tabindex="-1" class="dropdown-header">Opciones de usuario</h6><div tabindex="-1" class="dropdown-divider"></div><button type="button" tabindex="0" role="menuitem" class="estilo-link dropdown-item"><i class="fa fa-upload"></i>  Subir firma</button><button type="button" tabindex="0" role="menuitem" class="estilo-link dropdown-item"><i class="fa fa-window-close"></i>  Cerrar sesión</button></div></li></ul></div></div></nav><div></div><div class="content"><div class="row"><div class="col-md-12"><div class="card"><div class="card-body"><div class="col-md-12"><table class="table-bordered no-margin-button-table table"><tbody><tr><td><form name="form-list" id="form-list"><div class="form-row"><div class="col-md-4"><div class="no-border input-group"><input placeholder="Buscar..." autocomplete="off" name="SearchUser" id="textSearch" type="text" class="form-control"><div class="input-group-append"></div><button class="btn btn-primary"><i class="fa fa-search"></i></button></div></div><div class="text-right col-md-8"><button type="button" class="btn-round btn-primary btn btn-secondary"><i class="fa fa-plus-square fa-fw"></i>  Agregar</button></div></div></form></td></tr></tbody></table><div style="overflow: auto;"><table class="borde-tabla table table-bordered table-striped table-hover"><thead><tr><th>Correo</th><th>Nombres</th><th>Apellidos</th><th>Grupos</th><th>Series</th><th>Activo</th><th>Acción</th></tr></thead><tbody><tr><td>alvaro.puerto@nuevaeps.com.co</td><td> Alvaro German Puerto Vargas</td><td> </td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver grupo" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar grupo" class="btn btn-link"><i class="fa fa-users"></i></button></td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver series" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar series" class="btn btn-link"><i class="fa fa-book" aria-hidden="true"></i></button></td><td>Si</td><td style="text-align: center; align-self: stretch;"><div class="dropleft btn-group-sm dropdown"><button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-secondary"><span class="sr-only">Toggle Dropdown</span></button><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-edit"></i> Editar usuario</button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-upload"></i> Subir firma</button></div></div></td></tr></tbody></table><div><ul class="pagination"><li class="page-item disabled"><a class="page-link" href="#" aria-label="Go to first page">«</a></li><li class="page-item disabled"><a class="page-link" href="#" aria-label="Go to previous page">⟨</a></li><li class="page-item active"><a class="page-link undefined" href="#" aria-label="Go to page number 1">1</a></li><li class="page-item disabled"><a class="page-link" href="#" aria-label="Go to next page">⟩</a></li><li class="page-item disabled"><a class="page-link" href="#" aria-label="Go to last page">»</a></li></ul></div></div></div></div></div></div></div><div></div><div></div><div></div><div></div></div><footer class="footer"><div class="container-fluid"><div class="row"><nav class="footer-nav"></nav><div class="credits ml-auto"><div class="copyright">© 2021| Grupo ASD</div></div></div></div></footer><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 70px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 34px;"></div></div></div><div class="fixed-plugin"><div class="dropdown"><div><i class="fa fa-cog fa-1x"></i></div><ul class="dropdown-menu show"><li class="header-title">COLOR MENÚ</li><li class="adjustments-line"><div class="badge-colors text-center"><span class="badge filter badge-dark active" data-color="black"></span><span class="badge filter badge-light" data-color="white"></span></div></li><li class="header-title">COLOR ACTIVO MENÚ</li><li class="adjustments-line"><div class="badge-colors text-center"><span class="badge filter badge-primary" data-color="primary"></span><span class="badge filter badge-info active" data-color="info"></span><span class="badge filter badge-success" data-color="success"></span><span class="badge filter badge-warning" data-color="warning"></span><span class="badge filter badge-danger" data-color="danger"></span></div></li></ul></div></div></div></div><script>!function(c){function e(e){for(var r,t,n=e[0],a=e[1],f=e[2],o=0,d=[];o<n.length;o++)t=n[o],i[t]&&d.push(i[t][0]),i[t]=0;for(r in a)Object.prototype.hasOwnProperty.call(a,r)&&(c[r]=a[r]);for(p&&p(e);d.length;)d.shift()();return b.push.apply(b,f||[]),u()}function u(){for(var e,r=0;r<b.length;r++){for(var t=b[r],n=!0,a=1;a<t.length;a++){var f=t[a];0!==i[f]&&(n=!1)}n&&(b.splice(r--,1),e=l(l.s=t[0]))}return e}var t={},i={78:0},b=[];function l(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return c[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.e=function(f){var e=[],t=i[f];if(0!==t)if(t)e.push(t[2]);else{var r=new Promise(function(e,r){t=i[f]=[e,r]});e.push(t[2]=r);var n,o=document.createElement("script");o.charset="utf-8",o.timeout=120,l.nc&&o.setAttribute("nonce",l.nc),o.src=l.p+"static/js/"+({}[f]||f)+"."+{0:"43de92ac",1:"6dc07e41",2:"224325e8",3:"4ed0d97e",4:"5916530a",5:"07bb5933",6:"b9432275",7:"498f95da",8:"61d05aeb",9:"4289a5ae",10:"5bdd306b",11:"581eb3ff",12:"6aaaa4a1",13:"044597a3",14:"f4b5be1b",15:"654dcf45",16:"7f16d476",17:"21b63a39",18:"5909bfc6",19:"b86b7ba2",20:"7956ee31",21:"33f81c76",22:"b0a38843",23:"fd353d60",24:"f1eb36c9",25:"d797d87c",26:"c8b2f541",27:"2d21f7cd",28:"f60e77db",29:"f0306dda",30:"7562d29b",31:"1e9b5f96",32:"efd3a75a",33:"10bf80d4",34:"fadfe4fe",35:"b5575261",36:"8c98e91e",37:"e2e3e95d",38:"fd26dba9",39:"a8e6bde0",40:"282bdbc8",41:"82f9dc21",42:"bf57666c",43:"aa712cb0",44:"7894c995",45:"3bd54dc2",46:"c1a6d9e8",47:"733a0b3d",48:"f9d0e269",49:"cd356152",50:"671c2a46",51:"f1545919",52:"fd9a1244",53:"4d790ebc",54:"07871109",55:"d1325373",56:"968073ff",57:"5811df3e",58:"d8e5401c",59:"5ce90f08",60:"0aa6df8f",61:"7b43aa3d",62:"d6e65cf1",63:"da445636",64:"56414762",65:"4cdd894c",66:"cb87f051",67:"a5a2446b",68:"f346b118",69:"4987e86d",70:"3096ae0e",71:"2f889180",72:"a116e2a5",73:"76d5d5cf",74:"30190e1c",75:"1a3541f1",76:"ea408bf2"}[f]+".chunk.js",n=function(e){o.onerror=o.onload=null,clearTimeout(d);var r=i[f];if(0!==r){if(r){var t=e&&("load"===e.type?"missing":e.type),n=e&&e.target&&e.target.src,a=new Error("Loading chunk "+f+" failed.\n("+t+": "+n+")");a.type=t,a.request=n,r[1](a)}i[f]=void 0}};var d=setTimeout(function(){n({type:"timeout",target:o})},12e4);o.onerror=o.onload=n,document.head.appendChild(o)}return Promise.all(e)},l.m=c,l.c=t,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)l.d(t,n,function(e){return r[e]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/",l.oe=function(e){throw console.error(e),e};var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var a=0;a<r.length;a++)e(r[a]);var p=n;u()}([])</script><script src="/static/js/79.056e20be.chunk.js"></script><script src="/static/js/main.cdb8149e.chunk.js"></script><div tabindex="-1" style="position: relative; z-index: 1050; display: block;"><div class=""><div class="modal fade show" role="dialog" tabindex="-1" style="display: block;"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Editar Usuario</h5><button type="button" class="close" aria-label="Close"><span aria-hidden="true">×</span></button></div><div class="modal-body"><form name="form-list" id="form-list"><div class="form-row"><div class="col-md-6"><div class="form-group"><label class="">Correo <span class="input-obligatorio">*</span></label><input class="form-control" type="mail" maxlength="150" autocomplete="off" name="correo" readonly=""><div class="text-error"></div></div></div><div class="col-md-6"><div class="form-group"><label class="">Nombres <span class="input-obligatorio">*</span></label><input class="form-control" type="text" maxlength="50" name="nombre" autocomplete="off"><div class="text-error"></div></div></div></div><div class="form-row"><div class="col-md-6"><div class="form-group"><label class="">Apellidos <span class="input-obligatorio">*</span></label><input class="form-control" type="text" maxlength="50" autocomplete="off" name="apellido"><div class="text-error"></div></div></div><div class="col-md-6"><div class="form-group"><label class="">Cliente <span class="input-obligatorio">*</span></label><select class="form-control" name="cliente"><option value="">Seleccione cliente</option><option value="1016a2c8-5276-4d33-86f6-909e6ef868fb">Cliente General4</option><option value="cf79e110-9d8e-4c3c-8c61-95031382a4a8">Cliente General4</option><option value="883edbdc-1221-48b5-83dd-17d01f2e279a">Nueva EPS</option></select><div class="text-error"></div></div></div></div><div class="form-row"><div class="col-md-6"><div class="form-group"><label class="">Sucursal <span class="input-obligatorio">*</span></label><select class="form-control" name="sucursalId"><option value="">Seleccione sucursal</option><option value="251c4d47-3d15-428f-98ce-c6f1c82e09c5">Acacias</option><option value="25b97ef8-b757-48fa-a811-aaddf8672629">Aguachica</option><option value="d1297923-99be-4912-93bd-1372964b7154">Agustin Codazzi</option><option value="ee60d127-2ded-43df-b791-76c998364213">Alcala</option><option value="af0b6cb7-cc2b-4b8c-bb27-112dcd8bf5be">Almeida</option><option value="0ef669f2-8fea-4e50-a404-07fb9b4ffde6">Anserma</option><option value="98bd3ac3-9ba8-4956-a1a4-25be13f2fd89">Apartado</option><option value="b3e89846-1b3f-4185-aadd-54954c2867d7">Aranzazu</option><option value="e808ed39-7400-44d2-9522-8d9ebb4de966">Arauca</option><option value="90a43d0f-6b40-466b-8aa2-49ddbff8e85e">Arauquita</option><option value="8a8d05c1-3530-448a-a6af-1c302ffadb97">Armenia</option><option value="6ede4502-ac37-41b6-8729-043bd8a83b74">Barbosa</option><option value="44220dff-06b0-4e8c-874a-04b6bc546c0d">Barrancabermeja</option><option value="dd4333b6-75ef-44a2-b5df-4bbf7c971553">Barranquilla</option><option value="3cc0bb9c-cc78-4e25-896b-9e62af859b85">Belalcazar</option><option value="530723b6-75da-4c45-a85c-d10a5f0bb1c6">Belen</option><option value="cb1306cb-fd24-4c70-b0f6-a92a369cdd92">Bogotá</option><option value="4f460065-b4c6-43ca-aa27-392d4909235e">Bosconia</option><option value="ed72a80d-a5b9-4189-8a36-ac96b6805b36">Bucaramanga</option><option value="98be854d-092f-4317-b2ab-7f85a1e86c10">Buenaventura</option><option value="48be986c-0c35-4905-89f7-80a6941b5623">Buenavista</option><option value="5c2f7621-28cf-4193-b230-5d559af61c10">Buenos Aires</option><option value="572aaf26-ca18-4a3f-8161-2dae882427c3">Cácota</option><option value="a8c17aff-6430-4910-80af-94779f52ca97">Caimito</option><option value="ff14e675-2670-47c3-a7ba-fb0d2b239bba">Calamar</option><option value="571acb7b-e72a-4ea8-9ee1-f290479fedf2">Calarca</option><option value="13c51382-9538-4597-8e2f-2825f73121d7">Caldas</option><option value="229bac70-2cd9-4f59-93b1-958aaea5bf41">Cali</option><option value="6ee2abcc-22b5-40f6-809e-b2e6e4c13ebb">Candelaria</option><option value="c1e64ffe-5308-4639-92bd-9d41d89a495e">Carmen Del Darien</option><option value="c28cda52-3fe4-4576-8e98-717ce45a70f1">Cartagena</option><option value="6525b2fc-c16c-4b7b-b74e-35ee66e058b9">Cartago</option><option value="f73ac2ef-340d-4109-9117-4148b6cda3b7">Cepita</option><option value="b65a09bc-3554-4050-a7e2-f96c7f6cd1e2">Cerinza</option><option value="d0998648-d6d5-4630-932e-828c5e88fea5">Cerrito</option><option value="e7474a0e-a3ed-43a1-80f2-e935a813ab80">Chapinero</option><option value="99a792b9-7803-45de-b17f-dc3646ea2661">Chima</option><option value="1f3bc123-2432-4305-ace2-f528b722227d">Chinchina</option><option value="88914e3a-14a5-46ee-94e0-9d60cbb7e846">Chiriguana</option><option value="bf812e29-4a62-4b9e-8656-cd79998842de">Chivor</option><option value="89d7a5c2-700e-4727-989d-78fb8f0106a4">Cienaga</option><option value="93d832b3-4d4d-4d76-ade0-681ff6d5b549">Circasia</option><option value="bd2e9f67-77e0-47e4-9820-b69c13b9fd22">Córdoba </option><option value="d4950b3e-02c9-4a6e-954f-0dced9e35106">Corozal</option><option value="7a2817a6-410e-4d54-b8d0-e6ebfd320202">Corretaje 1</option><option value="3f7af804-89e7-42b2-a897-4d38615f6061">Corretaje 2</option><option value="aa3048c1-7481-41c2-84d1-dbc0dc13a4ad">Cucuta</option><option value="3523a0eb-1625-4f9c-a242-5f35aeffa438">Cundinamarca</option><option value="e46136df-91cb-49e1-a175-6ec403a00184">Curumani </option><option value="bab21c75-f182-4554-b551-d02bea7f84cf">Duitama</option><option value="8fc48725-ba5c-401a-baee-aefc7f6b8c14">El Carmen de Chucuri</option><option value="ba2f6ec9-9ec5-4094-b0d4-e5c12be46dff">El Copey</option><option value="9333b5c4-eeac-4a36-aa9e-9a4e8300a6a8">El Dorado</option><option value="caf8e15a-bbc0-45b4-be89-7d0fc00605d0">El Paso</option><option value="a6d0f130-402e-458d-88ac-fc6a7a25b321">El Retorno</option><option value="057420e0-d2c7-429f-bead-506d06d5b6d8">El Zulia</option><option value="dda752ca-85be-4975-bd5c-9ecd65c1241f">Espinal</option><option value="ee19bbfd-11f4-415b-ba76-fb9608ca01a4">Filadelfia</option><option value="89fe6594-0099-48b2-b212-9af63cf4e4e1">Florencia</option><option value="cc895f0d-cfdf-4b76-96c0-79e43d74eed4">Florian</option><option value="78cc481d-a47c-4bdc-a996-492ef420ab7d">Fonseca</option><option value="c628935e-d897-4e2b-bd70-c5a6b3f56940">Gacheta</option><option value="68840b46-0583-4965-b902-b57a4c8ed144">Galapa </option><option value="b7ee67d8-0ba9-4d6d-81db-4df861d1a7b7">Gambita</option><option value="3c9d17f1-f8e5-4c09-9494-ae10f4ee735c">Garagoa</option><option value="58784136-7f1e-43a1-b27c-11d2de48d7ce">Genova</option><option value="8ea2c322-7461-4674-9444-7274a60df3da">Girón</option><option value="a950fa3a-c900-47b7-ba73-abc52654adc8">Guacamayas</option><option value="4a7b990d-1fd6-412f-9122-64bc7fa6602b">Guadalajara de Buga</option><option value="9908dde1-2726-4f20-9ac4-6b4701e5edc4">Guadalupe</option><option value="df7daca9-9f39-417e-8cda-01d0595db94b">Guajira</option><option value="5d324945-0b94-4367-bce0-f67ab9b5e15f">Hato</option><option value="c189725a-6bec-4ade-aeb2-028f938bc1bb">Hatonuevo</option><option value="1ed0609d-f882-4826-8cd8-6676cdaad31e">Honda</option><option value="84764889-75d4-4e01-aa6b-3b5bdd6a4692">Ibague</option><option value="b6ffae5d-2448-42b2-abf4-3e23de092b66">Iza</option><option value="3474531a-3f9d-48a8-968e-a65315ddf2bc">Jamundi</option><option value="2a7f9b55-3ecf-4082-83aa-2024f09af14e">La Cumbre</option><option value="15b02c02-dc43-4f60-8c16-9f6b569f360f">La Dorada</option><option value="20b5c7db-9739-4ac7-926b-8745e3f1caa5">La Paz</option><option value="313597d5-2a01-45e4-bcbd-8b68891d99eb">La Primavera</option><option value="926829a2-d483-4dbc-8a7a-6ec67566b42b">La Tebaida</option><option value="85e79f42-0cd5-418b-a768-fb6efc10ea34">La Unión</option><option value="7543a26d-8720-452b-b4ec-40fd962d0f40">La Uvita</option><option value="67bba9f9-d0d3-4efc-ae9f-12d257dec947">Labor Empresarial</option><option value="bcd06e59-6411-4c7b-a3c9-c54860fe1761">Lebrija</option><option value="3ad2b0a2-5004-43e6-9b2e-0e84fc50c4e4">Leticia</option><option value="e1558ed9-6db1-4546-8317-43b7c1ad7702">Macaravita</option><option value="ce987f6b-ee96-4bb4-b505-1dc6a38067bd">Manati</option><option value="c597f31f-c036-4873-8650-34d3b6b2b63d">Manizales</option><option value="c0b38aaf-1ca3-4e50-9c7a-a18f487f083c">Manzanarez</option><option value="5789fd70-313e-48aa-ad3f-6c83545fcad6">Mariquita</option><option value="f7e36449-6160-4ad8-a290-f2e85e8fcdce">Marulanda</option><option value="5fd1bc28-68ce-43fe-bae6-662790b66604">Matanza</option><option value="21661b64-d449-490f-8330-94e3e22a1c6f">Medellin</option><option value="ccde1bee-3281-485a-a269-8c6a53058008">Mitú</option><option value="741ce307-60df-47b3-9241-e5801888b911">Montenegro</option><option value="9529a83f-f06e-4e42-af42-4af940b001ab">Monteria</option><option value="2d970741-0829-4ff0-8c81-31184cdccf04">Motavita</option><option value="3361fddd-3f6c-4e5f-a4b5-7cfeaf70b03a">Nacional</option><option value="aa0b5201-2379-48fb-8300-cb82f50e7a20">Nacional</option><option value="4c8f38d4-a1e3-45b9-b41d-d256f9d9d296">Neiva</option><option value="b2da7200-ef2e-4edc-a498-2dd1c100b8b2">Norte</option><option value="01f87af7-463b-4ccb-a7a7-2c98a891c04e">Nuevo Colón</option><option value="ad60c6a5-7adf-467d-9041-b9f9fc09bb70">Nunchia</option><option value="d82a5d9d-bbd9-4be5-97c4-afc9b46b9d02">Ocaña</option><option value="1a472b1d-0540-4e9a-96eb-8d6248f2a698">Pacora</option><option value="4e8e6508-bd0f-439c-beab-8231db80fffa">Paipa</option><option value="11ae9bec-c304-4624-90a8-fc3786889274">Palestina</option><option value="5651d8a3-b313-43bf-83f6-260e426a1c56">Palmas del Socorro</option><option value="60479b32-87a2-4212-9244-ad24a947fda3">Palmira</option><option value="77c76ba1-2488-4fcd-abfb-7e689618d16a">Pasto</option><option value="c17f3e8f-c8bd-4bca-ab7d-4797f3df7fb4">Pepe Sierra</option><option value="8a73a2d8-cbb8-45a1-8606-16c747c53637">Pereira</option><option value="0d0e3d3e-5a3b-4aeb-ba34-f332df769ed6">Piedecuesta</option><option value="32c60b34-22ca-4a8f-9ae0-81ec26d00c35">Piendamo</option><option value="1163b0b6-887b-40c3-a256-c5d2cc8ed483">Pijao</option><option value="823a6a3e-ff26-493e-bb8d-9958b9401c2e">Pitalito</option><option value="82ecc34c-e667-4dab-8f3e-9c26a337e77b">Plato</option><option value="fc4c0b92-c12b-456a-8bd2-585725ed5bcb">Popayan</option><option value="7bf9e35e-02e5-474c-9ca4-55f8a6b8f205">Pruebas</option><option value="84756ebd-712d-4bbd-aac4-1eddcef169d9">Puerto Carreño</option><option value="653c675a-042e-4a70-9f4e-d718208a30ec">Puerto López</option><option value="bdc0f474-6e72-4384-90e0-b53fe7928a4f">Puerto Nariño</option><option value="19a28cb6-f364-4f02-beaf-4a54fb682fe5">Puerto Tejada</option><option value="3d7cfd1a-d59f-48bc-9fbf-d199fb89f919">Quibdo</option><option value="8c8b30b9-b0be-4dff-be83-3f2fe7d8000e">Raquira</option><option value="a6035691-6bc7-43ee-844a-92bc52d445c5">Riofrío</option><option value="4718ce1c-5350-4785-9a10-6e756be9910a">Riohacha</option><option value="f270a91d-af81-4aa1-859f-b7de0eea1fcd">Rionegro</option><option value="9fd915cd-e800-4235-9fe7-12d7e7aea962">Riosucio</option><option value="a6d11679-260f-484f-ac10-423d06ec6f00">Roldanillo</option><option value="f1bfc557-6fb0-415a-9fd5-3a2a5389b92b">Sabana de Torres</option><option value="4b6f98bb-a437-4fda-b228-389e512d6781">Sabanas de San Ángel</option><option value="320757f4-452b-4cf8-8e75-9e6efa960078">Salamina</option><option value="669e69eb-138f-4760-88ce-13caeef1b2db">Salento</option><option value="cfb8a63e-c677-4521-b94e-4f54061d6bca">San Andrés</option><option value="d7e7fa33-789e-432a-bff6-33a4e33231d3">San Benito</option><option value="0aebcaea-be06-475a-bc54-05a26bbd80bb">San Cayetano</option><option value="1182bed3-8a4c-4c93-99d4-b5c984ef09ef">San Gil</option><option value="7dbc2a38-0296-4d14-8c01-56af9bc684f7">San Jose</option><option value="1ffe4cfd-0d61-4c6a-bac3-a1c4db403d74">San Jose del Guaviare</option><option value="2882797a-be9a-4455-8f14-3ad4a1222048">San Juan del Cesar</option><option value="050b0c15-ae6d-4836-a03f-8de3ea47af62">San Pelayo</option><option value="d600b1a6-c175-4702-bd64-abcb1929010d">Santa Marta</option><option value="852e5836-567f-465d-b3eb-a5b2c0d3c722">Santana</option><option value="23349124-41ae-4242-9eb8-506c99f1edb0">Santander de Quilichao</option><option value="945f9911-c9c9-43b0-9f1d-764634e05833">Santiago de Tolu</option><option value="d7aa1bbc-52d9-401f-b39e-ac734569e294">Saravena</option><option value="04365838-43e1-4527-bc3d-b775a5490bb8">Simijaca</option><option value="a1c9a19f-78b4-40cc-9b81-6aa6ef917ac2">Sincelejo</option><option value="73044f39-60ee-4d5f-8659-e6ee90ce7a99">Soacha</option><option value="e8bd101a-da81-450b-a05b-54b893e7980c">Socorro</option><option value="418ad5e2-d176-4d0a-9b5e-eff072b962f1">Socota</option><option value="35676021-339b-4f4d-9de2-6ca316484e7a">Sogamoso</option><option value="715e2b16-22e0-40b8-b874-fa92b884a8ea">Soledad</option><option value="305059dc-879a-4d4c-92d1-6bbda6082cd7">Tame</option><option value="a7ee041c-e11b-4ba9-bc77-118a6a5f6963">Tibu</option><option value="41bd6b63-2a0e-4acb-b5f2-725ced584386">Tierralta</option><option value="cc1ae920-1d86-432c-b391-87aa2eb4b5c7">Timbiqui</option><option value="33126509-8cb0-40a6-a8e7-2a0767a191e4">Toca</option><option value="d4723048-831d-4c09-9d76-0ebc54be131b">Totoró</option><option value="62e72152-8390-4426-b828-fc7acc9369ef">Trujillo</option><option value="627ae643-b28d-41ae-b6f9-d3b0bf34fd7e">Tulua</option><option value="cfa6c7b9-8705-4027-8aea-c0a823365d7f">Tunja</option><option value="7da2dcdb-0d3d-47b3-8670-3e42e1180446">Tunungua</option><option value="b8e23069-94f0-435a-88b2-856e853deb37">Turbo</option><option value="567c45dc-ed34-4ba3-9c2d-4c53f8ae659f">Tuta</option><option value="9c18642d-ac12-4d82-8f49-0bbb78a4e828">Ulloa</option><option value="073db137-c9c7-4611-8bbb-198fdfec39a9">Umbita</option><option value="8a5aa058-3321-47ec-b088-f2733f51f03b">Valledupar</option><option value="1a8ca855-d49d-4cb6-b585-644c1bf1f8f3">Vaupés</option><option value="cc3d692a-b788-4da3-aaa2-17d875885fb7">Velez</option><option value="b069f39e-2798-48b9-8bd4-5eeb0e687b69">Vichada</option><option value="5441c241-ea99-4018-bff3-6f6f8c564997">Villa de Leyva</option><option value="b791faa9-6bd7-40f7-bd7d-a279e82d4caa">Villamaría</option><option value="420a0f51-e260-4350-bc98-5c646c040e90">Villavicencio</option><option value="b7747056-48d0-4f87-a68a-b65c5d756b65">Viracacha</option><option value="6ffb9033-d2c0-406a-ae19-b4e3b04f3e69">Viterbo</option><option value="904ffaf4-93d8-4eb4-b8b6-b0c0038b486c">Yopal</option><option value="99f12e2d-f7eb-41af-a005-365e22a74770">Yumbo</option><option value="60aec39b-bbd9-4656-b3ce-707990f607d3">Zarzal</option><option value="44372711-b2fc-4c8c-b6d9-769eff2bc157">Zipaquira</option><option value="42a5aa1c-4d65-4129-8229-d27b5724bea7">Zona Bananera</option></select><div class="text-error"></div></div></div><div class="col-md-6"><div class="form-group"><label class="">Estado <span class="input-obligatorio">*</span></label><select class="form-control" name="activo"><option value="true">Activo</option><option value="false">Inactivo</option></select><div class="text-error"></div></div></div></div></form></div><div class="modal-footer"><button type="button" class="btn-round btn-primary btn btn-secondary"><i class="fas fa-save fa-fw"></i> Guardar</button><button type="button" class="btn-round btn btn-secondary"><i class="fa fa-eraser fa-fw"></i> Cancelar</button></div></div></div></div><div class="modal-backdrop fade show"></div></div></div></body></html>

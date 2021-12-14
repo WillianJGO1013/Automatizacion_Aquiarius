@@ -1,0 +1,754 @@
+<html lang="en"><head><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="76x76" href="/apple-icon.png"><link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet"><link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&amp;display=swap" rel="stylesheet"><title>Radicación</title><script async="" src="https://embed.tawk.to/602122f6c31c9117cb76ee52/1eu0o0j2k" charset="UTF-8" crossorigin="*"></script><script type="text/javascript">var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date;!function(){var e=document.createElement("script"),t=document.getElementsByTagName("script")[0];e.async=!0,e.src="https://embed.tawk.to/602122f6c31c9117cb76ee52/1eu0o0j2k",e.charset="UTF-8",e.setAttribute("crossorigin","*"),t.parentNode.insertBefore(e,t)}()</script><link href="/static/css/79.a9de75ef.chunk.css" rel="stylesheet"><link href="/static/css/main.557db194.chunk.css" rel="stylesheet"><script charset="utf-8" src="/static/js/56.968073ff.chunk.js"></script><script charset="utf-8" src="/static/js/16.7f16d476.chunk.js"></script><script charset="utf-8" src="/static/js/19.b86b7ba2.chunk.js"></script><script charset="utf-8" src="/static/js/54.07871109.chunk.js"></script><script charset="utf-8" src="/static/js/46.c1a6d9e8.chunk.js"></script><script charset="utf-8" src="/static/js/18.5909bfc6.chunk.js"></script><script charset="utf-8" src="/static/js/53.4d790ebc.chunk.js"></script><script charset="utf-8" src="/static/js/14.f4b5be1b.chunk.js"></script><script charset="utf-8" src="/static/js/15.654dcf45.chunk.js"></script><script charset="utf-8" src="/static/js/29.f0306dda.chunk.js"></script><script charset="utf-8" src="/static/js/31.1e9b5f96.chunk.js"></script><script charset="utf-8" src="/static/js/32.efd3a75a.chunk.js"></script><script charset="utf-8" src="/static/js/20.7956ee31.chunk.js"></script><script charset="utf-8" src="/static/js/2.224325e8.chunk.js"></script><script charset="utf-8" src="/static/js/0.43de92ac.chunk.js"></script><script charset="utf-8" src="/static/js/6.b9432275.chunk.js"></script><script charset="utf-8" src="/static/js/9.4289a5ae.chunk.js"></script><script charset="utf-8" src="/static/js/12.6aaaa4a1.chunk.js"></script><script charset="utf-8" src="/static/js/7.498f95da.chunk.js"></script><script charset="utf-8" src="/static/js/10.5bdd306b.chunk.js"></script><script charset="utf-8" src="/static/js/13.044597a3.chunk.js"></script><script charset="utf-8" src="/static/js/66.cb87f051.chunk.js"></script><script charset="utf-8" src="/static/js/73.76d5d5cf.chunk.js"></script><script charset="utf-8" src="/static/js/27.2d21f7cd.chunk.js"></script><script charset="utf-8" src="/static/js/60.0aa6df8f.chunk.js"></script><script charset="utf-8" src="/static/js/38.fd26dba9.chunk.js"></script><script charset="utf-8" src="/static/js/36.8c98e91e.chunk.js"></script><script charset="utf-8" src="/static/js/5.07bb5933.chunk.js"></script><script charset="utf-8" src="/static/js/61.7b43aa3d.chunk.js"></script><script charset="utf-8" src="/static/js/64.56414762.chunk.js"></script><script charset="utf-8" src="/static/js/63.da445636.chunk.js"></script><script charset="utf-8" src="/static/js/40.282bdbc8.chunk.js"></script><script charset="utf-8" src="/static/js/26.c8b2f541.chunk.js"></script><script charset="utf-8" src="/static/js/30.7562d29b.chunk.js"></script><script charset="utf-8" src="/static/js/43.aa712cb0.chunk.js"></script><script charset="utf-8" src="/static/js/62.d6e65cf1.chunk.js"></script><script charset="utf-8" src="/static/js/44.7894c995.chunk.js"></script><script charset="utf-8" src="/static/js/52.fd9a1244.chunk.js"></script><script charset="utf-8" src="/static/js/21.33f81c76.chunk.js"></script><script charset="utf-8" src="/static/js/24.f1eb36c9.chunk.js"></script><script charset="utf-8" src="/static/js/25.d797d87c.chunk.js"></script><script charset="utf-8" src="/static/js/65.4cdd894c.chunk.js"></script><script charset="utf-8" src="/static/js/45.3bd54dc2.chunk.js"></script><script charset="utf-8" src="/static/js/41.82f9dc21.chunk.js"></script><style type="text/css">.react-flow{width:100%;height:100%;position:relative;overflow:hidden}.react-flow__pane,.react-flow__renderer,.react-flow__selectionpane{width:100%;height:100%;position:absolute;top:0;left:0}.react-flow__pane{z-index:1}.react-flow__renderer{z-index:4}.react-flow__selectionpane{z-index:5}.react-flow__selection{position:absolute;top:0;left:0;background:rgba(0,89,220,.08);border:1px dotted rgba(0,89,220,.8)}.react-flow__edges{position:absolute;top:0;left:0;pointer-events:none;z-index:2}.react-flow__edge{pointer-events:all}.react-flow__edge.inactive{pointer-events:none}.react-flow__edge.selected .react-flow__edge-path{stroke:#555}.react-flow__edge.animated path{stroke-dasharray:5;-webkit-animation:dashdraw .5s linear infinite;animation:dashdraw .5s linear infinite}@-webkit-keyframes dashdraw{0%{stroke-dashoffset:10}}@keyframes dashdraw{0%{stroke-dashoffset:10}}.react-flow__edge-path{fill:none;stroke:#b1b1b7;stroke-width:1}.react-flow__edge-text{font-size:10px;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.react-flow__edge-textbg{fill:#fff}.react-flow__connection{pointer-events:none}.react-flow__connection .animated{stroke-dasharray:5;-webkit-animation:dashdraw .5s linear infinite;animation:dashdraw .5s linear infinite}.react-flow__connection-path{fill:none;stroke:#b1b1b7;stroke-width:1}.react-flow__nodes{width:100%;height:100%;pointer-events:none;z-index:3}.react-flow__node,.react-flow__nodes{position:absolute;transform-origin:0 0}.react-flow__node{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:all;cursor:-webkit-grab;cursor:grab}.react-flow__node-default,.react-flow__node-input,.react-flow__node-output{padding:10px;border-radius:3px;width:150px;font-size:12px;color:#222;text-align:center;border-width:1px;border-style:solid}.react-flow__node-default.selectable:hover,.react-flow__node-input.selectable:hover,.react-flow__node-output.selectable:hover{box-shadow:0 1px 4px 1px rgba(0,0,0,.08)}.react-flow__node-input{background:#fff;border-color:#0041d0}.react-flow__node-input.selected,.react-flow__node-input.selected:hover{box-shadow:0 0 0 .5px #0041d0}.react-flow__node-input .react-flow__handle{background:#0041d0}.react-flow__node-default{background:#fff;border-color:#1a192b}.react-flow__node-default.selected,.react-flow__node-default.selected:hover{box-shadow:0 0 0 .5px #1a192b}.react-flow__node-default .react-flow__handle{background:#1a192b}.react-flow__node-output{background:#fff;border-color:#ff0072}.react-flow__node-output.selected,.react-flow__node-output.selected:hover{box-shadow:0 0 0 .5px #ff0072}.react-flow__node-output .react-flow__handle{background:#ff0072}.react-flow__nodesselection{z-index:3;position:absolute;width:100%;height:100%;top:0;left:0;transform-origin:left top;pointer-events:none}.react-flow__nodesselection-rect{position:absolute;background:rgba(0,89,220,.08);border:1px dotted rgba(0,89,220,.8);pointer-events:all}.react-flow__handle{position:absolute;width:6px;height:6px;background:#555;border:1px solid #fff;pointer-events:none;border-radius:100%}.react-flow__handle.connectable{pointer-events:all;cursor:crosshair}.react-flow__handle-bottom{top:auto;left:50%;bottom:-4px;transform:translate(-50%)}.react-flow__handle-top{left:50%;top:-4px;transform:translate(-50%)}.react-flow__handle-left{top:50%;left:-4px;transform:translateY(-50%)}.react-flow__handle-right{right:-4px;top:50%;transform:translateY(-50%)}</style><style type="text/css">.react-flow__minimap{position:absolute;z-index:5;bottom:10px;right:10px;background-color:#fff}</style><style type="text/css">.react-flow__controls{position:absolute;z-index:5;bottom:10px;left:10px;box-shadow:0 0 2px 1px rgba(0,0,0,.08)}.react-flow__controls-button{background:#fefefe;border-bottom:1px solid #eee;display:flex;justify-content:center;align-items:center;width:16px;height:16px;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;padding:5px}.react-flow__controls-button svg{width:100%}.react-flow__controls-button:hover{background:#f4f4f4}</style><style type="text/css">.react-flow__background{position:absolute;top:0;left:0;width:100%;height:100%}</style><style type="text/css">.TransformComponent-module_container__3NwNd {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  margin: 0;
+  padding: 0;
+}
+.TransformComponent-module_content__TZU5O {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  transform-origin: 0% 0%;
+}
+.TransformComponent-module_content__TZU5O img {
+  pointer-events: none;
+}
+</style><style data-react-tooltip="true">.__react_component_tooltip {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 13px;
+  left: -999em;
+  opacity: 0;
+  padding: 8px 21px;
+  position: fixed;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+  top: -999em;
+  visibility: hidden;
+  z-index: 999;
+}
+.__react_component_tooltip.allow_hover, .__react_component_tooltip.allow_click {
+  pointer-events: auto;
+}
+.__react_component_tooltip::before, .__react_component_tooltip::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.__react_component_tooltip.show {
+  opacity: 0.9;
+  margin-top: 0;
+  margin-left: 0;
+  visibility: visible;
+}
+.__react_component_tooltip.place-top::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-bottom::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-left::before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  right: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip.place-right::before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  left: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip .multi-line {
+  display: block;
+  padding: 2px 0;
+  text-align: center;
+}</style></head><body class="perfect-scrollbar-on modal-open"><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="wrapper"><div id="sidebar" class="sidebar menu_lateral" data-color="black" data-active-color="info"><div class="logo"><a href="/admin/home" class="simple-text logo-normal">&nbsp;</a></div><div class="sidebar-wrapper ps"><ul class="nav"><li class=""><a class="nav-link espacio_icono" data-tip="Radicar documentos" data-for="TooltipExample0" href="/admin/setparameters" currentitem="false"><i class="nc-icon nc-paper"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip tf9478d36-96f7-44ae-86b0-87def0e31f6e place-right type-dark" id="TooltipExample0" data-id="tooltip"><style aria-hidden="true">
+  	.tf9478d36-96f7-44ae-86b0-87def0e31f6e {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tf9478d36-96f7-44ae-86b0-87def0e31f6e.place-top {
+        margin-top: -10px;
+    }
+    .tf9478d36-96f7-44ae-86b0-87def0e31f6e.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tf9478d36-96f7-44ae-86b0-87def0e31f6e.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tf9478d36-96f7-44ae-86b0-87def0e31f6e.place-bottom {
+        margin-top: 10px;
+    }
+    .tf9478d36-96f7-44ae-86b0-87def0e31f6e.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tf9478d36-96f7-44ae-86b0-87def0e31f6e.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tf9478d36-96f7-44ae-86b0-87def0e31f6e.place-left {
+        margin-left: -10px;
+    }
+    .tf9478d36-96f7-44ae-86b0-87def0e31f6e.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tf9478d36-96f7-44ae-86b0-87def0e31f6e.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tf9478d36-96f7-44ae-86b0-87def0e31f6e.place-right {
+        margin-left: 10px;
+    }
+    .tf9478d36-96f7-44ae-86b0-87def0e31f6e.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tf9478d36-96f7-44ae-86b0-87def0e31f6e.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""><a class="nav-link espacio_icono" data-tip="documentos radicados" data-for="TooltipExample7" href="/admin/show-filing" currentitem="false"><i class="nc-icon nc-tile-56"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip te29bc256-62e1-4446-931e-c72366e57e76 place-right type-dark" id="TooltipExample7" data-id="tooltip"><style aria-hidden="true">
+  	.te29bc256-62e1-4446-931e-c72366e57e76 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.te29bc256-62e1-4446-931e-c72366e57e76.place-top {
+        margin-top: -10px;
+    }
+    .te29bc256-62e1-4446-931e-c72366e57e76.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .te29bc256-62e1-4446-931e-c72366e57e76.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .te29bc256-62e1-4446-931e-c72366e57e76.place-bottom {
+        margin-top: 10px;
+    }
+    .te29bc256-62e1-4446-931e-c72366e57e76.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .te29bc256-62e1-4446-931e-c72366e57e76.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .te29bc256-62e1-4446-931e-c72366e57e76.place-left {
+        margin-left: -10px;
+    }
+    .te29bc256-62e1-4446-931e-c72366e57e76.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .te29bc256-62e1-4446-931e-c72366e57e76.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .te29bc256-62e1-4446-931e-c72366e57e76.place-right {
+        margin-left: 10px;
+    }
+    .te29bc256-62e1-4446-931e-c72366e57e76.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .te29bc256-62e1-4446-931e-c72366e57e76.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""><a class="nav-link espacio_icono" data-tip="ver radicados masivos" data-for="TooltipExample12" href="/admin/ver-masivo" currentitem="false"><i class="nc-icon nc-box-2"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip t7ac69198-08f8-4266-b72f-eeda1f2d07cb place-right type-dark" id="TooltipExample12" data-id="tooltip"><style aria-hidden="true">
+  	.t7ac69198-08f8-4266-b72f-eeda1f2d07cb {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t7ac69198-08f8-4266-b72f-eeda1f2d07cb.place-top {
+        margin-top: -10px;
+    }
+    .t7ac69198-08f8-4266-b72f-eeda1f2d07cb.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t7ac69198-08f8-4266-b72f-eeda1f2d07cb.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t7ac69198-08f8-4266-b72f-eeda1f2d07cb.place-bottom {
+        margin-top: 10px;
+    }
+    .t7ac69198-08f8-4266-b72f-eeda1f2d07cb.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t7ac69198-08f8-4266-b72f-eeda1f2d07cb.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t7ac69198-08f8-4266-b72f-eeda1f2d07cb.place-left {
+        margin-left: -10px;
+    }
+    .t7ac69198-08f8-4266-b72f-eeda1f2d07cb.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t7ac69198-08f8-4266-b72f-eeda1f2d07cb.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t7ac69198-08f8-4266-b72f-eeda1f2d07cb.place-right {
+        margin-left: 10px;
+    }
+    .t7ac69198-08f8-4266-b72f-eeda1f2d07cb.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t7ac69198-08f8-4266-b72f-eeda1f2d07cb.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""><a class="nav-link espacio_icono" data-tip="Gestión de radicados" data-for="TooltipExample17" href="/admin/wrapper-gest-radicados" currentitem="false"><i class="nc-icon nc-book-bookmark"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip t78e131ac-3eb4-45e5-83cf-6f270d7461f7 place-right type-dark" id="TooltipExample17" data-id="tooltip"><style aria-hidden="true">
+  	.t78e131ac-3eb4-45e5-83cf-6f270d7461f7 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t78e131ac-3eb4-45e5-83cf-6f270d7461f7.place-top {
+        margin-top: -10px;
+    }
+    .t78e131ac-3eb4-45e5-83cf-6f270d7461f7.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t78e131ac-3eb4-45e5-83cf-6f270d7461f7.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t78e131ac-3eb4-45e5-83cf-6f270d7461f7.place-bottom {
+        margin-top: 10px;
+    }
+    .t78e131ac-3eb4-45e5-83cf-6f270d7461f7.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t78e131ac-3eb4-45e5-83cf-6f270d7461f7.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t78e131ac-3eb4-45e5-83cf-6f270d7461f7.place-left {
+        margin-left: -10px;
+    }
+    .t78e131ac-3eb4-45e5-83cf-6f270d7461f7.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t78e131ac-3eb4-45e5-83cf-6f270d7461f7.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t78e131ac-3eb4-45e5-83cf-6f270d7461f7.place-right {
+        margin-left: 10px;
+    }
+    .t78e131ac-3eb4-45e5-83cf-6f270d7461f7.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t78e131ac-3eb4-45e5-83cf-6f270d7461f7.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li><li class=""><a class="nav-link espacio_icono" data-tip="Administración clientes" data-for="TooltipExample18" href="/admin/list-clients" currentitem="false"><i class="nc-icon nc-single-02"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip t9f881cba-d0fd-492d-8ccb-d2bf1ef0bc80 place-right type-dark" id="TooltipExample18" data-id="tooltip"><style aria-hidden="true">
+  	.t9f881cba-d0fd-492d-8ccb-d2bf1ef0bc80 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t9f881cba-d0fd-492d-8ccb-d2bf1ef0bc80.place-top {
+        margin-top: -10px;
+    }
+    .t9f881cba-d0fd-492d-8ccb-d2bf1ef0bc80.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t9f881cba-d0fd-492d-8ccb-d2bf1ef0bc80.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t9f881cba-d0fd-492d-8ccb-d2bf1ef0bc80.place-bottom {
+        margin-top: 10px;
+    }
+    .t9f881cba-d0fd-492d-8ccb-d2bf1ef0bc80.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t9f881cba-d0fd-492d-8ccb-d2bf1ef0bc80.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t9f881cba-d0fd-492d-8ccb-d2bf1ef0bc80.place-left {
+        margin-left: -10px;
+    }
+    .t9f881cba-d0fd-492d-8ccb-d2bf1ef0bc80.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t9f881cba-d0fd-492d-8ccb-d2bf1ef0bc80.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t9f881cba-d0fd-492d-8ccb-d2bf1ef0bc80.place-right {
+        margin-left: 10px;
+    }
+    .t9f881cba-d0fd-492d-8ccb-d2bf1ef0bc80.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t9f881cba-d0fd-492d-8ccb-d2bf1ef0bc80.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li><li class=""><a class="nav-link espacio_icono" data-tip="Administrar Sucursales" data-for="TooltipExample31" href="/admin/list-branch-offices" currentitem="false"><i class="nc-icon nc-tap-01"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip t7bcbda86-9c5f-42b4-91ca-87a28ffe91ac place-right type-dark" id="TooltipExample31" data-id="tooltip"><style aria-hidden="true">
+  	.t7bcbda86-9c5f-42b4-91ca-87a28ffe91ac {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t7bcbda86-9c5f-42b4-91ca-87a28ffe91ac.place-top {
+        margin-top: -10px;
+    }
+    .t7bcbda86-9c5f-42b4-91ca-87a28ffe91ac.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t7bcbda86-9c5f-42b4-91ca-87a28ffe91ac.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t7bcbda86-9c5f-42b4-91ca-87a28ffe91ac.place-bottom {
+        margin-top: 10px;
+    }
+    .t7bcbda86-9c5f-42b4-91ca-87a28ffe91ac.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t7bcbda86-9c5f-42b4-91ca-87a28ffe91ac.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t7bcbda86-9c5f-42b4-91ca-87a28ffe91ac.place-left {
+        margin-left: -10px;
+    }
+    .t7bcbda86-9c5f-42b4-91ca-87a28ffe91ac.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t7bcbda86-9c5f-42b4-91ca-87a28ffe91ac.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t7bcbda86-9c5f-42b4-91ca-87a28ffe91ac.place-right {
+        margin-left: 10px;
+    }
+    .t7bcbda86-9c5f-42b4-91ca-87a28ffe91ac.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t7bcbda86-9c5f-42b4-91ca-87a28ffe91ac.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li><li class="active"><a class="nav-link espacio_icono active" data-tip="Administración usuarios" data-for="TooltipExample32" href="/admin/users" currentitem="false" aria-current="page"><i class="nc-icon nc-circle-10"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip tb17313a2-eef4-4eea-9bc7-f48956b552e2 place-right type-dark" id="TooltipExample32" data-id="tooltip" style="left: 65px; top: 422px;"><style aria-hidden="true">
+  	.tb17313a2-eef4-4eea-9bc7-f48956b552e2 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tb17313a2-eef4-4eea-9bc7-f48956b552e2.place-top {
+        margin-top: -10px;
+    }
+    .tb17313a2-eef4-4eea-9bc7-f48956b552e2.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tb17313a2-eef4-4eea-9bc7-f48956b552e2.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tb17313a2-eef4-4eea-9bc7-f48956b552e2.place-bottom {
+        margin-top: 10px;
+    }
+    .tb17313a2-eef4-4eea-9bc7-f48956b552e2.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tb17313a2-eef4-4eea-9bc7-f48956b552e2.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tb17313a2-eef4-4eea-9bc7-f48956b552e2.place-left {
+        margin-left: -10px;
+    }
+    .tb17313a2-eef4-4eea-9bc7-f48956b552e2.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tb17313a2-eef4-4eea-9bc7-f48956b552e2.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tb17313a2-eef4-4eea-9bc7-f48956b552e2.place-right {
+        margin-left: 10px;
+    }
+    .tb17313a2-eef4-4eea-9bc7-f48956b552e2.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tb17313a2-eef4-4eea-9bc7-f48956b552e2.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style>Administración usuarios</div></a></li><li class=""></li><li class=""></li><li class=""></li><li class=""><a class="nav-link espacio_icono" data-tip="Administración roles" data-for="TooltipExample36" href="/admin/roles" currentitem="false"><i class="nc-icon nc-touch-id"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip tba56b8b5-2a12-4d10-b0e2-a2915816e222 place-right type-dark" id="TooltipExample36" data-id="tooltip"><style aria-hidden="true">
+  	.tba56b8b5-2a12-4d10-b0e2-a2915816e222 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tba56b8b5-2a12-4d10-b0e2-a2915816e222.place-top {
+        margin-top: -10px;
+    }
+    .tba56b8b5-2a12-4d10-b0e2-a2915816e222.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tba56b8b5-2a12-4d10-b0e2-a2915816e222.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tba56b8b5-2a12-4d10-b0e2-a2915816e222.place-bottom {
+        margin-top: 10px;
+    }
+    .tba56b8b5-2a12-4d10-b0e2-a2915816e222.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tba56b8b5-2a12-4d10-b0e2-a2915816e222.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tba56b8b5-2a12-4d10-b0e2-a2915816e222.place-left {
+        margin-left: -10px;
+    }
+    .tba56b8b5-2a12-4d10-b0e2-a2915816e222.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tba56b8b5-2a12-4d10-b0e2-a2915816e222.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tba56b8b5-2a12-4d10-b0e2-a2915816e222.place-right {
+        margin-left: 10px;
+    }
+    .tba56b8b5-2a12-4d10-b0e2-a2915816e222.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tba56b8b5-2a12-4d10-b0e2-a2915816e222.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li><li class=""></li><li class=""><a class="nav-link espacio_icono" data-tip="Procesar documentos" data-for="TooltipExample38" href="/admin/ProcessDocuments" currentitem="false"><i class="nc-icon nc-single-copy-04"></i><div class="d-none d-sm-none d-md-block espacio_iconos"></div><div class="__react_component_tooltip t105fad84-fcae-41e2-86df-df0ff446ff8d place-right type-dark" id="TooltipExample38" data-id="tooltip"><style aria-hidden="true">
+  	.t105fad84-fcae-41e2-86df-df0ff446ff8d {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t105fad84-fcae-41e2-86df-df0ff446ff8d.place-top {
+        margin-top: -10px;
+    }
+    .t105fad84-fcae-41e2-86df-df0ff446ff8d.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t105fad84-fcae-41e2-86df-df0ff446ff8d.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t105fad84-fcae-41e2-86df-df0ff446ff8d.place-bottom {
+        margin-top: 10px;
+    }
+    .t105fad84-fcae-41e2-86df-df0ff446ff8d.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t105fad84-fcae-41e2-86df-df0ff446ff8d.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t105fad84-fcae-41e2-86df-df0ff446ff8d.place-left {
+        margin-left: -10px;
+    }
+    .t105fad84-fcae-41e2-86df-df0ff446ff8d.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t105fad84-fcae-41e2-86df-df0ff446ff8d.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t105fad84-fcae-41e2-86df-df0ff446ff8d.place-right {
+        margin-left: 10px;
+    }
+    .t105fad84-fcae-41e2-86df-df0ff446ff8d.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t105fad84-fcae-41e2-86df-df0ff446ff8d.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></a></li></ul><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div></div><div class="main-panel ps ps--active-y"><nav class="navbar-absolute fixed-top navbar-transparent  navbar navbar-expand-lg bg-transparent"><div class="container-fluid"><div class="navbar-wrapper"><div class="navbar-toggle"><button type="button" class="navbar-toggler"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button></div><a class="navbar-brand">Administración usuarios</a></div><button type="button" class="navbar-toggler"><span class="navbar-toggler-bar navbar-kebab"></span><span class="navbar-toggler-bar navbar-kebab"></span><span class="navbar-toggler-bar navbar-kebab"></span></button><div class="justify-content-end collapse navbar-collapse"><form class="mr-4"><span class="user"> Usuario: Coordinador 01</span></form><ul class="navbar-nav"><li class="dropdown nav-item"><a aria-haspopup="true" href="#" class="dropdown-toggle nav-link" aria-expanded="false"><i class="nc-icon nc-circle-10"></i><p><span class="d-lg-none d-md-block">Menú Opciones</span></p></a><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right"><h6 tabindex="-1" class="dropdown-header">Opciones de usuario</h6><div tabindex="-1" class="dropdown-divider"></div><button type="button" tabindex="0" role="menuitem" class="estilo-link dropdown-item"><i class="fa fa-upload"></i>  Subir firma</button><button type="button" tabindex="0" role="menuitem" class="estilo-link dropdown-item"><i class="fa fa-window-close"></i>  Cerrar sesión</button></div></li></ul></div></div></nav><div></div><div class="content"><div class="row"><div class="col-md-12"><div class="card"><div class="card-body"><div class="col-md-12"><table class="table-bordered no-margin-button-table table"><tbody><tr><td><form name="form-list" id="form-list"><div class="form-row"><div class="col-md-4"><div class="no-border input-group"><input placeholder="Buscar..." autocomplete="off" name="SearchUser" id="textSearch" type="text" class="form-control"><div class="input-group-append"></div><button class="btn btn-primary"><i class="fa fa-search"></i></button></div></div><div class="text-right col-md-8"><button type="button" class="btn-round btn-primary btn btn-secondary"><i class="fa fa-plus-square fa-fw"></i>  Agregar</button></div></div></form></td></tr></tbody></table><div style="overflow: auto;"><table class="borde-tabla table table-bordered table-striped table-hover"><thead><tr><th>Correo</th><th>Nombres</th><th>Apellidos</th><th>Grupos</th><th>Series</th><th>Activo</th><th>Acción</th></tr></thead><tbody><tr><td>alvaro.puerto@nuevaeps.com.co</td><td> Alvaro German Puerto Vargas</td><td> </td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver grupo" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar grupo" class="btn btn-link"><i class="fa fa-users"></i></button></td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver series" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar series" class="btn btn-link"><i class="fa fa-book" aria-hidden="true"></i></button></td><td>Si</td><td style="text-align: center; align-self: stretch;"><div class="dropleft btn-group-sm dropdown"><button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-secondary"><span class="sr-only">Toggle Dropdown</span></button><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-edit"></i> Editar usuario</button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-upload"></i> Subir firma</button></div></div></td></tr><tr><td>abelzurita1@hotmail.com</td><td>Abel Antonio Zurita Herrera</td><td>Abel Antonio Zurita Herrera</td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver grupo" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar grupo" class="btn btn-link"><i class="fa fa-users"></i></button></td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver series" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar series" class="btn btn-link"><i class="fa fa-book" aria-hidden="true"></i></button></td><td>Si</td><td style="text-align: center; align-self: stretch;"><div class="dropleft btn-group-sm dropdown"><button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-secondary"><span class="sr-only">Toggle Dropdown</span></button><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-edit"></i> Editar usuario</button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-upload"></i> Subir firma</button></div></div></td></tr><tr><td>oscar-aguiar@accionriesgos.com</td><td>Acción Int.Riesgos Ltda</td><td>Oscar Aguiar</td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver grupo" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar grupo" class="btn btn-link"><i class="fa fa-users"></i></button></td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver series" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar series" class="btn btn-link"><i class="fa fa-book" aria-hidden="true"></i></button></td><td>Si</td><td style="text-align: center; align-self: stretch;"><div class="dropleft btn-group-sm dropdown"><button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-secondary"><span class="sr-only">Toggle Dropdown</span></button><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-edit"></i> Editar usuario</button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-upload"></i> Subir firma</button></div></div></td></tr><tr><td>edna-buitrago@accionriesgos.com</td><td>Acción Int.Riesgos Ltda</td><td>Edna Buitrago</td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver grupo" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar grupo" class="btn btn-link"><i class="fa fa-users"></i></button></td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver series" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar series" class="btn btn-link"><i class="fa fa-book" aria-hidden="true"></i></button></td><td>Si</td><td style="text-align: center; align-self: stretch;"><div class="dropleft btn-group-sm dropdown"><button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-secondary"><span class="sr-only">Toggle Dropdown</span></button><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-edit"></i> Editar usuario</button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-upload"></i> Subir firma</button></div></div></td></tr><tr><td>adalberto.hernandez@nuevaeps.com.co</td><td>ADALBERTO HERNANDEZ DE LA CRUZ</td><td>ADALBERTO HERNANDEZ DE LA CRUZ</td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver grupo" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar grupo" class="btn btn-link"><i class="fa fa-users"></i></button></td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver series" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar series" class="btn btn-link"><i class="fa fa-book" aria-hidden="true"></i></button></td><td>Si</td><td style="text-align: center; align-self: stretch;"><div class="dropleft btn-group-sm dropdown"><button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-secondary"><span class="sr-only">Toggle Dropdown</span></button><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-edit"></i> Editar usuario</button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-upload"></i> Subir firma</button></div></div></td></tr><tr><td>adriana.hurtado@nuevaeps.com.co</td><td>ADRIANA HURTADO SILVA</td><td>ADRIANA HURTADO SILVA</td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver grupo" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar grupo" class="btn btn-link"><i class="fa fa-users"></i></button></td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver series" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar series" class="btn btn-link"><i class="fa fa-book" aria-hidden="true"></i></button></td><td>Si</td><td style="text-align: center; align-self: stretch;"><div class="dropleft btn-group-sm dropdown"><button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-secondary"><span class="sr-only">Toggle Dropdown</span></button><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-edit"></i> Editar usuario</button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-upload"></i> Subir firma</button></div></div></td></tr><tr><td>adriana.tello@nuevaeps.com.co</td><td>Adriana J. Tello Portilla</td><td>Adriana J. Tello Portilla</td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver grupo" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar grupo" class="btn btn-link"><i class="fa fa-users"></i></button></td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver series" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar series" class="btn btn-link"><i class="fa fa-book" aria-hidden="true"></i></button></td><td>Si</td><td style="text-align: center; align-self: stretch;"><div class="dropleft btn-group-sm dropdown"><button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-secondary"><span class="sr-only">Toggle Dropdown</span></button><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-edit"></i> Editar usuario</button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-upload"></i> Subir firma</button></div></div></td></tr><tr><td>adriana.sarria@nuevaeps.com.co</td><td>Adriana Lucia</td><td>Sarria L</td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver grupo" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar grupo" class="btn btn-link"><i class="fa fa-users"></i></button></td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver series" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar series" class="btn btn-link"><i class="fa fa-book" aria-hidden="true"></i></button></td><td>Si</td><td style="text-align: center; align-self: stretch;"><div class="dropleft btn-group-sm dropdown"><button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-secondary"><span class="sr-only">Toggle Dropdown</span></button><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-edit"></i> Editar usuario</button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-upload"></i> Subir firma</button></div></div></td></tr><tr><td>adrimarin7@hotmail.com</td><td>Adriana M. Perez Marin</td><td>Adriana M. Perez Marin</td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver grupo" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar grupo" class="btn btn-link"><i class="fa fa-users"></i></button></td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver series" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar series" class="btn btn-link"><i class="fa fa-book" aria-hidden="true"></i></button></td><td>Si</td><td style="text-align: center; align-self: stretch;"><div class="dropleft btn-group-sm dropdown"><button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-secondary"><span class="sr-only">Toggle Dropdown</span></button><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-edit"></i> Editar usuario</button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-upload"></i> Subir firma</button></div></div></td></tr><tr><td>adrymar24@yahoo.es</td><td>Adriana Marcela Araque Galan</td><td>Adriana Marcela Araque Galan</td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver grupo" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar grupo" class="btn btn-link"><i class="fa fa-users"></i></button></td><td style="text-align: center; align-self: stretch;"><button type="button" title="Ver series" class="btn btn-link"><i class="fa fa-search"></i></button><button type="button" title="Administrar series" class="btn btn-link"><i class="fa fa-book" aria-hidden="true"></i></button></td><td>No</td><td style="text-align: center; align-self: stretch;"><div class="dropleft btn-group-sm dropdown"><button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-secondary"><span class="sr-only">Toggle Dropdown</span></button><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-edit"></i> Editar usuario</button><button type="button" tabindex="0" role="menuitem" class="dropdown-item"><i class="fa fa-upload"></i> Subir firma</button></div></div></td></tr></tbody></table><div><ul class="pagination"><li class="page-item disabled"><a class="page-link" href="#" aria-label="Go to first page">«</a></li><li class="page-item disabled"><a class="page-link" href="#" aria-label="Go to previous page">⟨</a></li><li class="page-item active"><a class="page-link undefined" href="#" aria-label="Go to page number 1">1</a></li><li class="page-item"><a class="page-link" href="#" aria-label="Go to page number 2">2</a></li><li class="page-item"><a class="page-link" href="#" aria-label="Go to page number 3">3</a></li><li class="page-item"><a class="page-link" href="#" aria-label="Go to page number 4">4</a></li><li class="page-item"><a class="page-link" href="#" aria-label="Go to page number 5">5</a></li><li class="page-item"><a class="page-link" href="#" aria-label="Go to page number 6">6</a></li><li class="page-item"><a class="page-link" href="#" aria-label="Go to page number 7">7</a></li><li class="page-item"><a class="page-link" href="#" aria-label="Go to page number 8">8</a></li><li class="page-item"><a class="page-link" href="#" aria-label="Go to page number 9">9</a></li><li class="page-item"><a class="page-link" href="#" aria-label="Go to page number 10">10</a></li><li class="page-item"><a class="page-link" href="#" aria-label="Go to next page">⟩</a></li><li class="page-item"><a class="page-link" href="#" aria-label="Go to last page">»</a></li></ul></div></div></div></div></div></div></div><div></div><div></div><div></div><div></div></div><footer class="footer"><div class="container-fluid"><div class="row"><nav class="footer-nav"></nav><div class="credits ml-auto"><div class="copyright">© 2021| Grupo ASD</div></div></div></div></footer><div class="ps__rail-x" style="left: 0px; bottom: -420px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 420px; height: 580px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 244px; height: 336px;"></div></div></div><div class="fixed-plugin"><div class="dropdown"><div><i class="fa fa-cog fa-1x"></i></div><ul class="dropdown-menu show"><li class="header-title">COLOR MENÚ</li><li class="adjustments-line"><div class="badge-colors text-center"><span class="badge filter badge-dark active" data-color="black"></span><span class="badge filter badge-light" data-color="white"></span></div></li><li class="header-title">COLOR ACTIVO MENÚ</li><li class="adjustments-line"><div class="badge-colors text-center"><span class="badge filter badge-primary" data-color="primary"></span><span class="badge filter badge-info active" data-color="info"></span><span class="badge filter badge-success" data-color="success"></span><span class="badge filter badge-warning" data-color="warning"></span><span class="badge filter badge-danger" data-color="danger"></span></div></li></ul></div></div></div></div><script>!function(c){function e(e){for(var r,t,n=e[0],a=e[1],f=e[2],o=0,d=[];o<n.length;o++)t=n[o],i[t]&&d.push(i[t][0]),i[t]=0;for(r in a)Object.prototype.hasOwnProperty.call(a,r)&&(c[r]=a[r]);for(p&&p(e);d.length;)d.shift()();return b.push.apply(b,f||[]),u()}function u(){for(var e,r=0;r<b.length;r++){for(var t=b[r],n=!0,a=1;a<t.length;a++){var f=t[a];0!==i[f]&&(n=!1)}n&&(b.splice(r--,1),e=l(l.s=t[0]))}return e}var t={},i={78:0},b=[];function l(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return c[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.e=function(f){var e=[],t=i[f];if(0!==t)if(t)e.push(t[2]);else{var r=new Promise(function(e,r){t=i[f]=[e,r]});e.push(t[2]=r);var n,o=document.createElement("script");o.charset="utf-8",o.timeout=120,l.nc&&o.setAttribute("nonce",l.nc),o.src=l.p+"static/js/"+({}[f]||f)+"."+{0:"43de92ac",1:"6dc07e41",2:"224325e8",3:"4ed0d97e",4:"5916530a",5:"07bb5933",6:"b9432275",7:"498f95da",8:"61d05aeb",9:"4289a5ae",10:"5bdd306b",11:"581eb3ff",12:"6aaaa4a1",13:"044597a3",14:"f4b5be1b",15:"654dcf45",16:"7f16d476",17:"21b63a39",18:"5909bfc6",19:"b86b7ba2",20:"7956ee31",21:"33f81c76",22:"b0a38843",23:"fd353d60",24:"f1eb36c9",25:"d797d87c",26:"c8b2f541",27:"2d21f7cd",28:"f60e77db",29:"f0306dda",30:"7562d29b",31:"1e9b5f96",32:"efd3a75a",33:"10bf80d4",34:"fadfe4fe",35:"b5575261",36:"8c98e91e",37:"e2e3e95d",38:"fd26dba9",39:"a8e6bde0",40:"282bdbc8",41:"82f9dc21",42:"bf57666c",43:"aa712cb0",44:"7894c995",45:"3bd54dc2",46:"c1a6d9e8",47:"733a0b3d",48:"f9d0e269",49:"cd356152",50:"671c2a46",51:"f1545919",52:"fd9a1244",53:"4d790ebc",54:"07871109",55:"d1325373",56:"968073ff",57:"5811df3e",58:"d8e5401c",59:"5ce90f08",60:"0aa6df8f",61:"7b43aa3d",62:"d6e65cf1",63:"da445636",64:"56414762",65:"4cdd894c",66:"cb87f051",67:"a5a2446b",68:"f346b118",69:"4987e86d",70:"3096ae0e",71:"2f889180",72:"a116e2a5",73:"76d5d5cf",74:"30190e1c",75:"1a3541f1",76:"ea408bf2"}[f]+".chunk.js",n=function(e){o.onerror=o.onload=null,clearTimeout(d);var r=i[f];if(0!==r){if(r){var t=e&&("load"===e.type?"missing":e.type),n=e&&e.target&&e.target.src,a=new Error("Loading chunk "+f+" failed.\n("+t+": "+n+")");a.type=t,a.request=n,r[1](a)}i[f]=void 0}};var d=setTimeout(function(){n({type:"timeout",target:o})},12e4);o.onerror=o.onload=n,document.head.appendChild(o)}return Promise.all(e)},l.m=c,l.c=t,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)l.d(t,n,function(e){return r[e]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/",l.oe=function(e){throw console.error(e),e};var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var a=0;a<r.length;a++)e(r[a]);var p=n;u()}([])</script><script src="/static/js/79.056e20be.chunk.js"></script><script src="/static/js/main.cdb8149e.chunk.js"></script><div tabindex="-1" style="position: relative; z-index: 1050; display: block;"><div class=""><div class="modal fade show" role="dialog" tabindex="-1" style="display: block;"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">ASIGNAR GRUPO A USUARIO</h5><button type="button" class="close" aria-label="Close"><span aria-hidden="true">×</span></button></div><div class="modal-body"><form name="form-obs" id="form-obs"><div class="form-row"><div class="col-md-12"><h6><b>Usuario:</b> <span style="color: blue;">adrymar24@yahoo.es</span></h6></div></div><br><div class="form-row"><div class="col-md-12"><div class="form-group"><label class="">Grupos asignados o por asignar al usuario</label><select multiple="" title="Seleccione uno o varios grupos sosteniendo la tecla control" size="8" class="form-control" id="grupoAsignados" name="grupos"><option value="95a5df86-b611-6f37-497a-427d296a7968">Analista de radicación</option><option value="aiwcbniw-vwbp-8lhs-yntc-yxnjjiu1e93g">Apartado</option><option value="njrrmi67-afdq-3w7n-lnrv-oqmtkfslvobs">Arauca</option><option value="1">Armenia</option><option value="2c9480857929110501795821edc01baa">Auxiliar Registro y control</option><option value="qtpbwcvd-bpro-hzgp-rnn4-3zhfllo0anpw">Barrancabermeja</option><option value="ga6v2hxa-m4we-fa9b-2vhp-h4aksx8z7kjw">Barranquilla Ext</option><option value="gzkjbs2b-6ot2-guad-zhyr-gbiov3c48qcw">Barranquilla Int</option><option value="xut3mzci-0ddp-htja-qcka-3nkk88mzmtif">Bucaramanga</option><option value="9bwemnte-sy7b-crrc-6voy-9gsviumbxm4d">Buenaventura</option><option value="ii9juibf-ylwh-3ss5-p2rf-mwig3udssuf0">Cali Ext</option><option value="klmdyxla-gycb-u7tt-m1gd-m6bd1qnfsvxo">Cali Int</option><option value="3xpxf8p0-cbzk-vzho-zlgm-0lc1rdrldjpi">Candelaria</option><option value="zurfittt-nc07-oxmj-ttav-bvbb427icgth">Cartagena</option><option value="tgea5cpk-hxoi-gk2w-calb-oirnufwzeqj2">Cartago</option><option value="5">Chapinero</option><option value="2c94808579291105017a165a47fe3d97">Coord de afiliación por oficio</option><option value="20a9bddd-9851-5791-8d8a-675d8e47b294">Coordinador de radicación</option><option value="2c94808579291105017a1bd270224518">Corretaje_1</option><option value="2c94808579291105017a1bd295d24519">Corretaje_2</option><option value="5fkumesd-ik09-3gow-sh0k-fs2wwhu0oxxs">Cucuta</option><option value="2">Cundinamarca</option><option value="jga91fju-9fnz-u0hh-syvo-hrmtgsacd9du">Duitama</option><option value="6">El Dorado</option><option value="cfyq3dby-yygn-sfsk-ycly-esrjrjgmxq0s">Espinal</option><option value="omru0wq8-zyeq-fzjt-kmxb-7h1l6ok2vvo0">Florencia</option><option value="2c948085792911050179582221161bab">Fuerza comercial</option><option value="a9a9efaa-bxx1-woat-klyi-zbtia6aej2uv">Giron</option><option value="dgu7ully-5lvf-9yqm-1pjb-8rqxfvtcssyr">Guadalajara de Buga</option><option value="mpwuq0vt-hjyl-skvk-jnnq-ok6l3b82bxas">Ibague</option><option value="bvtzggnf-lqdk-uwa9-nu5r-tfll8cwhmakk">Ipiales</option><option value="9qg4qey5-qjc0-mag9-iyaj-2rmqp6bxssm0">La Dorada</option><option value="2c9480857a3aaa87017af968b3342d49">La primavera</option><option value="3">Labor Empresarial</option><option value="nqdeyvrg-y4s5-xknr-iuyo-dufzwroofs6z">Manizales</option><option value="ubhxdze6-qwul-l8kd-vtz1-q0pqtwsqg1qc">Mariquita</option><option value="otmrc8oi-xrms-rqjg-dzjk-amgfxhtocwsa">Medellin Ext</option><option value="hqhzddlw-ss72-fkeb-c3n5-u9rniao5xnse">Medellin Int</option><option value="36nxhjmq-ftmw-nimq-lhcm-yst5pgyddrt2">Monteria</option><option value="gjh4crqt-rxcc-291n-2lju-asj8ysgohh2f">Neiva</option><option value="7">Norte</option><option value="mcws1bi8-qxo2-vwja-rstd-5wjywpgbrmpd">Ocaña</option><option value="tnhtn0kl-diun-jjqp-jglt-ceyn4a1fhry4">Palmira</option><option value="9l7cans2-noc7-sjwl-mqmk-7izynediupur">Pasto</option><option value="8">Pepe Sierra</option><option value="iqra6aj9-ohgp-9tjy-kh18-ifaoio6nfewt">Pereira</option><option value="ofzvxocz-y5qz-kcer-lsg8-rzvdvug0gqij">Pitalito</option><option value="mzs0yckh-yjmg-0ucu-b7fu-jtlh9mcu3emv">Popayan</option><option value="2c9480857a3aaa87017af9666a362d2d">Puerto Carreño</option><option value="bgal6rkh-x7oq-krou-pi96-3qvlqyztk8rp">Puerto Tejada</option><option value="gikuwv0o-hbkk-0arh-m31x-rbhpqntuj3ja">Quibdo</option><option value="7a57da2e-d5a3-b1b2-e4ce-a6973f32d2c2">Radicador</option><option value="2c94808579291105017a20443af34bbf">Riohacha</option><option value="pmkwgswh-qcav-qrts-zq3a-iq7idqeuylwa">Rionegro</option><option value="8w03nd6w-etye-nlne-vlda-yjeadiogatv7">Salamina</option><option value="vymlv48h-zwqf-pbfp-enki-xhflk5mf7oyc">San Andres</option><option value="9">San cayetano</option><option value="gnbovvev-aapj-jkbt-xoeg-5trcrpuroxjo">San Gil</option><option value="4">Santa Marta</option><option value="zokl86sv-dwpt-ecbl-ec24-79s0pss2pnuy">Santander de Quilichao</option><option value="ulgswhcc-4e0b-5gbd-pnoa-pchqfvi3ifsc">Sincelejo</option><option value="k58sxavh-sexf-b1ci-h9jx-j5avaq196oua">Sogamoso</option><option value="id9px3qa-r2yc-x0dt-lyla-wgyylwsyzi7k">Tulua</option><option value="jik9b0qq-xgy3-gd2q-dsob-9wqmtb4vohey">Tumaco</option><option value="rarpjuqf-dugl-zwt2-7fep-lmeg1yvhyx0i">Tunja</option><option value="vm83pxyn-7zmm-s2c4-a49c-yy4yfkblwpuo">Valledupar</option><option value="xdrivnvk-ryhz-blra-a2eb-4nznhh5zdrq6">Villavicencio</option><option value="tkiknzpm-sqzs-awe1-kk4o-qtuqoxto1zk1">Yopal</option><option value="3ihyzcci-nc2i-oi8d-mcxn-q8ich765cjdw">Yumbo</option><option value="1jt2gnkn-givd-enxc-dut1-nx7lqfimw4bo">Zarzal</option></select><div class="text-error"></div></div></div><div class="col-md-12"><div hidden="" class="form-group"><label class="">Grupos asignados al usuario</label><select multiple="" size="8" class="form-control" id="diasNotificaciones" name="gruposAsignados"><option value="95a5df86-b611-6f37-497a-427d296a7968">Analista de radicación</option><option value="aiwcbniw-vwbp-8lhs-yntc-yxnjjiu1e93g">Apartado</option><option value="njrrmi67-afdq-3w7n-lnrv-oqmtkfslvobs">Arauca</option><option value="1">Armenia</option><option value="2c9480857929110501795821edc01baa">Auxiliar Registro y control</option><option value="qtpbwcvd-bpro-hzgp-rnn4-3zhfllo0anpw">Barrancabermeja</option><option value="ga6v2hxa-m4we-fa9b-2vhp-h4aksx8z7kjw">Barranquilla Ext</option><option value="gzkjbs2b-6ot2-guad-zhyr-gbiov3c48qcw">Barranquilla Int</option><option value="xut3mzci-0ddp-htja-qcka-3nkk88mzmtif">Bucaramanga</option><option value="9bwemnte-sy7b-crrc-6voy-9gsviumbxm4d">Buenaventura</option><option value="ii9juibf-ylwh-3ss5-p2rf-mwig3udssuf0">Cali Ext</option><option value="klmdyxla-gycb-u7tt-m1gd-m6bd1qnfsvxo">Cali Int</option><option value="3xpxf8p0-cbzk-vzho-zlgm-0lc1rdrldjpi">Candelaria</option><option value="zurfittt-nc07-oxmj-ttav-bvbb427icgth">Cartagena</option><option value="tgea5cpk-hxoi-gk2w-calb-oirnufwzeqj2">Cartago</option><option value="5">Chapinero</option><option value="2c94808579291105017a165a47fe3d97">Coord de afiliación por oficio</option><option value="20a9bddd-9851-5791-8d8a-675d8e47b294">Coordinador de radicación</option><option value="2c94808579291105017a1bd270224518">Corretaje_1</option><option value="2c94808579291105017a1bd295d24519">Corretaje_2</option><option value="5fkumesd-ik09-3gow-sh0k-fs2wwhu0oxxs">Cucuta</option><option value="2">Cundinamarca</option><option value="jga91fju-9fnz-u0hh-syvo-hrmtgsacd9du">Duitama</option><option value="6">El Dorado</option><option value="cfyq3dby-yygn-sfsk-ycly-esrjrjgmxq0s">Espinal</option><option value="omru0wq8-zyeq-fzjt-kmxb-7h1l6ok2vvo0">Florencia</option><option value="2c948085792911050179582221161bab">Fuerza comercial</option><option value="a9a9efaa-bxx1-woat-klyi-zbtia6aej2uv">Giron</option><option value="dgu7ully-5lvf-9yqm-1pjb-8rqxfvtcssyr">Guadalajara de Buga</option><option value="mpwuq0vt-hjyl-skvk-jnnq-ok6l3b82bxas">Ibague</option><option value="bvtzggnf-lqdk-uwa9-nu5r-tfll8cwhmakk">Ipiales</option><option value="9qg4qey5-qjc0-mag9-iyaj-2rmqp6bxssm0">La Dorada</option><option value="2c9480857a3aaa87017af968b3342d49">La primavera</option><option value="3">Labor Empresarial</option><option value="nqdeyvrg-y4s5-xknr-iuyo-dufzwroofs6z">Manizales</option><option value="ubhxdze6-qwul-l8kd-vtz1-q0pqtwsqg1qc">Mariquita</option><option value="otmrc8oi-xrms-rqjg-dzjk-amgfxhtocwsa">Medellin Ext</option><option value="hqhzddlw-ss72-fkeb-c3n5-u9rniao5xnse">Medellin Int</option><option value="36nxhjmq-ftmw-nimq-lhcm-yst5pgyddrt2">Monteria</option><option value="gjh4crqt-rxcc-291n-2lju-asj8ysgohh2f">Neiva</option><option value="7">Norte</option><option value="mcws1bi8-qxo2-vwja-rstd-5wjywpgbrmpd">Ocaña</option><option value="tnhtn0kl-diun-jjqp-jglt-ceyn4a1fhry4">Palmira</option><option value="9l7cans2-noc7-sjwl-mqmk-7izynediupur">Pasto</option><option value="8">Pepe Sierra</option><option value="iqra6aj9-ohgp-9tjy-kh18-ifaoio6nfewt">Pereira</option><option value="ofzvxocz-y5qz-kcer-lsg8-rzvdvug0gqij">Pitalito</option><option value="mzs0yckh-yjmg-0ucu-b7fu-jtlh9mcu3emv">Popayan</option><option value="2c9480857a3aaa87017af9666a362d2d">Puerto Carreño</option><option value="bgal6rkh-x7oq-krou-pi96-3qvlqyztk8rp">Puerto Tejada</option><option value="gikuwv0o-hbkk-0arh-m31x-rbhpqntuj3ja">Quibdo</option><option value="7a57da2e-d5a3-b1b2-e4ce-a6973f32d2c2">Radicador</option><option value="2c94808579291105017a20443af34bbf">Riohacha</option><option value="pmkwgswh-qcav-qrts-zq3a-iq7idqeuylwa">Rionegro</option><option value="8w03nd6w-etye-nlne-vlda-yjeadiogatv7">Salamina</option><option value="vymlv48h-zwqf-pbfp-enki-xhflk5mf7oyc">San Andres</option><option value="9">San cayetano</option><option value="gnbovvev-aapj-jkbt-xoeg-5trcrpuroxjo">San Gil</option><option value="4">Santa Marta</option><option value="zokl86sv-dwpt-ecbl-ec24-79s0pss2pnuy">Santander de Quilichao</option><option value="ulgswhcc-4e0b-5gbd-pnoa-pchqfvi3ifsc">Sincelejo</option><option value="k58sxavh-sexf-b1ci-h9jx-j5avaq196oua">Sogamoso</option><option value="id9px3qa-r2yc-x0dt-lyla-wgyylwsyzi7k">Tulua</option><option value="jik9b0qq-xgy3-gd2q-dsob-9wqmtb4vohey">Tumaco</option><option value="rarpjuqf-dugl-zwt2-7fep-lmeg1yvhyx0i">Tunja</option><option value="vm83pxyn-7zmm-s2c4-a49c-yy4yfkblwpuo">Valledupar</option><option value="xdrivnvk-ryhz-blra-a2eb-4nznhh5zdrq6">Villavicencio</option><option value="tkiknzpm-sqzs-awe1-kk4o-qtuqoxto1zk1">Yopal</option><option value="3ihyzcci-nc2i-oi8d-mcxn-q8ich765cjdw">Yumbo</option><option value="1jt2gnkn-givd-enxc-dut1-nx7lqfimw4bo">Zarzal</option></select></div></div></div></form></div><div class="modal-footer"><button type="button" class="btn-round btn-primary btn btn-secondary"><i class="fas fa-save fa-fw"></i> Guardar</button><button type="button" hidden="" class="btn-round btn-primary btn btn-secondary"><i class="fas fa-save fa-fw"></i> Aceptar</button><button type="button" class="btn-round btn btn-secondary"><i class="fa fa-eraser fa-fw"></i> Cancelar</button></div></div></div></div><div class="modal-backdrop fade show"></div></div></div></body></html>
